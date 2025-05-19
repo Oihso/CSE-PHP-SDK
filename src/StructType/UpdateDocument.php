@@ -16,9 +16,9 @@ class UpdateDocument extends AbstractStructBase
 {
     /**
      * The data
-     * @var \StructType\Element|null
+     * @var \Oihso\CSESDK\StructType\Element|null
      */
-    protected ?\StructType\Element $data = null;
+    protected ?\Oihso\CSESDK\StructType\Element $data = null;
     /**
      * The Login
      * Meta information extracted from the WSDL
@@ -37,21 +37,21 @@ class UpdateDocument extends AbstractStructBase
      * The parameters
      * Meta information extracted from the WSDL
      * - nillable: true
-     * @var \StructType\Element|null
+     * @var \Oihso\CSESDK\StructType\Element|null
      */
-    protected ?\StructType\Element $parameters = null;
+    protected ?\Oihso\CSESDK\StructType\Element $parameters = null;
     /**
      * Constructor method for UpdateDocument
      * @uses UpdateDocument::setData()
      * @uses UpdateDocument::setLogin()
      * @uses UpdateDocument::setPassword()
      * @uses UpdateDocument::setParameters()
-     * @param \StructType\Element $data
+     * @param \Oihso\CSESDK\StructType\Element $data
      * @param string $login
      * @param string $password
-     * @param \StructType\Element $parameters
+     * @param \Oihso\CSESDK\StructType\Element $parameters
      */
-    public function __construct(?\StructType\Element $data = null, ?string $login = null, ?string $password = null, ?\StructType\Element $parameters = null)
+    public function __construct(?\Oihso\CSESDK\StructType\Element $data = null, ?string $login = null, ?string $password = null, ?\Oihso\CSESDK\StructType\Element $parameters = null)
     {
         $this
             ->setData($data)
@@ -61,18 +61,18 @@ class UpdateDocument extends AbstractStructBase
     }
     /**
      * Get data value
-     * @return \StructType\Element|null
+     * @return \Oihso\CSESDK\StructType\Element|null
      */
-    public function getData(): ?\StructType\Element
+    public function getData(): ?\Oihso\CSESDK\StructType\Element
     {
         return $this->data;
     }
     /**
      * Set data value
-     * @param \StructType\Element $data
-     * @return \StructType\UpdateDocument
+     * @param \Oihso\CSESDK\StructType\Element $data
+     * @return \Oihso\CSESDK\StructType\UpdateDocument
      */
-    public function setData(?\StructType\Element $data = null): self
+    public function setData(?\Oihso\CSESDK\StructType\Element $data = null): self
     {
         $this->data = $data;
         
@@ -89,7 +89,7 @@ class UpdateDocument extends AbstractStructBase
     /**
      * Set Login value
      * @param string $login
-     * @return \StructType\UpdateDocument
+     * @return \Oihso\CSESDK\StructType\UpdateDocument
      */
     public function setLogin(?string $login = null): self
     {
@@ -112,7 +112,7 @@ class UpdateDocument extends AbstractStructBase
     /**
      * Set Password value
      * @param string $password
-     * @return \StructType\UpdateDocument
+     * @return \Oihso\CSESDK\StructType\UpdateDocument
      */
     public function setPassword(?string $password = null): self
     {
@@ -126,18 +126,18 @@ class UpdateDocument extends AbstractStructBase
     }
     /**
      * Get parameters value
-     * @return \StructType\Element|null
+     * @return \Oihso\CSESDK\StructType\Element|null
      */
-    public function getParameters(): ?\StructType\Element
+    public function getParameters(): ?\Oihso\CSESDK\StructType\Element
     {
         return $this->parameters;
     }
     /**
      * Set parameters value
-     * @param \StructType\Element $parameters
-     * @return \StructType\UpdateDocument
+     * @param \Oihso\CSESDK\StructType\Element $parameters
+     * @return \Oihso\CSESDK\StructType\UpdateDocument
      */
-    public function setParameters(?\StructType\Element $parameters = null): self
+    public function setParameters(?\Oihso\CSESDK\StructType\Element $parameters = null): self
     {
         $this->parameters = $parameters;
         

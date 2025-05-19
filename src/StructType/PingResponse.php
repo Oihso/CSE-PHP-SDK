@@ -40,7 +40,7 @@ class PingResponse extends AbstractStructBase
     /**
      * Set return value
      * @param bool $return
-     * @return \StructType\PingResponse
+     * @return \Oihso\CSESDK\StructType\PingResponse
      */
     public function setReturn(?bool $return = null): self
     {

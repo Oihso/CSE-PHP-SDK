@@ -28,7 +28,7 @@ class DeliveryOptions extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - nillable: true
-     * @var \StructType\ListOfCorrespondences[]
+     * @var \Oihso\CSESDK\StructType\ListOfCorrespondences[]
      */
     protected ?array $AdditionalConditions = null;
     /**
@@ -36,7 +36,7 @@ class DeliveryOptions extends AbstractStructBase
      * @uses DeliveryOptions::setCashOnDelivery()
      * @uses DeliveryOptions::setAdditionalConditions()
      * @param bool $cashOnDelivery
-     * @param \StructType\ListOfCorrespondences[] $additionalConditions
+     * @param \Oihso\CSESDK\StructType\ListOfCorrespondences[] $additionalConditions
      */
     public function __construct(?bool $cashOnDelivery = null, ?array $additionalConditions = null)
     {
@@ -60,7 +60,7 @@ class DeliveryOptions extends AbstractStructBase
      * This property is removable from request (nillable=true+minOccurs=0), therefore
      * if the value assigned to this property is null, it is removed from this object
      * @param bool $cashOnDelivery
-     * @return \StructType\DeliveryOptions
+     * @return \Oihso\CSESDK\StructType\DeliveryOptions
      */
     public function setCashOnDelivery(?bool $cashOnDelivery = null): self
     {
@@ -81,7 +81,7 @@ class DeliveryOptions extends AbstractStructBase
      * An additional test has been added (isset) before returning the property value as
      * this property may have been unset before, due to the fact that this property is
      * removable from the request (nillable=true+minOccurs=0)
-     * @return \StructType\ListOfCorrespondences[]
+     * @return \Oihso\CSESDK\StructType\ListOfCorrespondences[]
      */
     public function getAdditionalConditions(): ?array
     {
@@ -103,12 +103,12 @@ class DeliveryOptions extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $deliveryOptionsAdditionalConditionsItem) {
             // validation for constraint: itemType
-            if (!$deliveryOptionsAdditionalConditionsItem instanceof \StructType\ListOfCorrespondences) {
+            if (!$deliveryOptionsAdditionalConditionsItem instanceof \Oihso\CSESDK\StructType\ListOfCorrespondences) {
                 $invalidValues[] = is_object($deliveryOptionsAdditionalConditionsItem) ? get_class($deliveryOptionsAdditionalConditionsItem) : sprintf('%s(%s)', gettype($deliveryOptionsAdditionalConditionsItem), var_export($deliveryOptionsAdditionalConditionsItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The AdditionalConditions property can only contain items of type \StructType\ListOfCorrespondences, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The AdditionalConditions property can only contain items of type \Oihso\CSESDK\StructType\ListOfCorrespondences, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -119,8 +119,8 @@ class DeliveryOptions extends AbstractStructBase
      * This property is removable from request (nillable=true+minOccurs=0), therefore
      * if the value assigned to this property is null, it is removed from this object
      * @throws InvalidArgumentException
-     * @param \StructType\ListOfCorrespondences[] $additionalConditions
-     * @return \StructType\DeliveryOptions
+     * @param \Oihso\CSESDK\StructType\ListOfCorrespondences[] $additionalConditions
+     * @return \Oihso\CSESDK\StructType\DeliveryOptions
      */
     public function setAdditionalConditions(?array $additionalConditions = null): self
     {
@@ -139,14 +139,14 @@ class DeliveryOptions extends AbstractStructBase
     /**
      * Add item to AdditionalConditions value
      * @throws InvalidArgumentException
-     * @param \StructType\ListOfCorrespondences $item
-     * @return \StructType\DeliveryOptions
+     * @param \Oihso\CSESDK\StructType\ListOfCorrespondences $item
+     * @return \Oihso\CSESDK\StructType\DeliveryOptions
      */
-    public function addToAdditionalConditions(\StructType\ListOfCorrespondences $item): self
+    public function addToAdditionalConditions(\Oihso\CSESDK\StructType\ListOfCorrespondences $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\ListOfCorrespondences) {
-            throw new InvalidArgumentException(sprintf('The AdditionalConditions property can only contain items of type \StructType\ListOfCorrespondences, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Oihso\CSESDK\StructType\ListOfCorrespondences) {
+            throw new InvalidArgumentException(sprintf('The AdditionalConditions property can only contain items of type \Oihso\CSESDK\StructType\ListOfCorrespondences, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->AdditionalConditions[] = $item;
         

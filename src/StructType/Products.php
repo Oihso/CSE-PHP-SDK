@@ -191,7 +191,7 @@ class Products extends AbstractStructBase
      * This property is removable from request (nillable=true+minOccurs=0), therefore
      * if the value assigned to this property is null, it is removed from this object
      * @param string $article
-     * @return \StructType\Products
+     * @return \Oihso\CSESDK\StructType\Products
      */
     public function setArticle(?string $article = null): self
     {
@@ -223,7 +223,7 @@ class Products extends AbstractStructBase
      * This property is removable from request (nillable=true+minOccurs=0), therefore
      * if the value assigned to this property is null, it is removed from this object
      * @param string $name
-     * @return \StructType\Products
+     * @return \Oihso\CSESDK\StructType\Products
      */
     public function setName(?string $name = null): self
     {
@@ -255,7 +255,7 @@ class Products extends AbstractStructBase
      * This property is removable from request (nillable=true+minOccurs=0), therefore
      * if the value assigned to this property is null, it is removed from this object
      * @param string $bCProduct
-     * @return \StructType\Products
+     * @return \Oihso\CSESDK\StructType\Products
      */
     public function setBCProduct(?string $bCProduct = null): self
     {
@@ -287,7 +287,7 @@ class Products extends AbstractStructBase
      * This property is removable from request (nillable=true+minOccurs=0), therefore
      * if the value assigned to this property is null, it is removed from this object
      * @param string $party
-     * @return \StructType\Products
+     * @return \Oihso\CSESDK\StructType\Products
      */
     public function setParty(?string $party = null): self
     {
@@ -319,7 +319,7 @@ class Products extends AbstractStructBase
      * This property is removable from request (nillable=true+minOccurs=0), therefore
      * if the value assigned to this property is null, it is removed from this object
      * @param string $dayOfParty
-     * @return \StructType\Products
+     * @return \Oihso\CSESDK\StructType\Products
      */
     public function setDayOfParty(?string $dayOfParty = null): self
     {
@@ -351,7 +351,7 @@ class Products extends AbstractStructBase
      * This property is removable from request (nillable=true+minOccurs=0), therefore
      * if the value assigned to this property is null, it is removed from this object
      * @param string $expirationDate
-     * @return \StructType\Products
+     * @return \Oihso\CSESDK\StructType\Products
      */
     public function setExpirationDate(?string $expirationDate = null): self
     {
@@ -383,7 +383,7 @@ class Products extends AbstractStructBase
      * This property is removable from request (nillable=true+minOccurs=0), therefore
      * if the value assigned to this property is null, it is removed from this object
      * @param string $serialNumber
-     * @return \StructType\Products
+     * @return \Oihso\CSESDK\StructType\Products
      */
     public function setSerialNumber(?string $serialNumber = null): self
     {
@@ -415,7 +415,7 @@ class Products extends AbstractStructBase
      * This property is removable from request (nillable=true+minOccurs=0), therefore
      * if the value assigned to this property is null, it is removed from this object
      * @param float $price
-     * @return \StructType\Products
+     * @return \Oihso\CSESDK\StructType\Products
      */
     public function setPrice(?float $price = null): self
     {
@@ -447,7 +447,7 @@ class Products extends AbstractStructBase
      * This property is removable from request (nillable=true+minOccurs=0), therefore
      * if the value assigned to this property is null, it is removed from this object
      * @param string $package
-     * @return \StructType\Products
+     * @return \Oihso\CSESDK\StructType\Products
      */
     public function setPackage(?string $package = null): self
     {
@@ -479,7 +479,7 @@ class Products extends AbstractStructBase
      * This property is removable from request (nillable=true+minOccurs=0), therefore
      * if the value assigned to this property is null, it is removed from this object
      * @param int $packageQty
-     * @return \StructType\Products
+     * @return \Oihso\CSESDK\StructType\Products
      */
     public function setPackageQty(?int $packageQty = null): self
     {
@@ -511,7 +511,7 @@ class Products extends AbstractStructBase
      * This property is removable from request (nillable=true+minOccurs=0), therefore
      * if the value assigned to this property is null, it is removed from this object
      * @param int $qty
-     * @return \StructType\Products
+     * @return \Oihso\CSESDK\StructType\Products
      */
     public function setQty(?int $qty = null): self
     {
@@ -543,7 +543,7 @@ class Products extends AbstractStructBase
      * This property is removable from request (nillable=true+minOccurs=0), therefore
      * if the value assigned to this property is null, it is removed from this object
      * @param int $vATRate
-     * @return \StructType\Products
+     * @return \Oihso\CSESDK\StructType\Products
      */
     public function setVATRate(?int $vATRate = null): self
     {
@@ -575,7 +575,7 @@ class Products extends AbstractStructBase
      * This property is removable from request (nillable=true+minOccurs=0), therefore
      * if the value assigned to this property is null, it is removed from this object
      * @param float $assessedValue
-     * @return \StructType\Products
+     * @return \Oihso\CSESDK\StructType\Products
      */
     public function setAssessedValue(?float $assessedValue = null): self
     {
@@ -607,7 +607,7 @@ class Products extends AbstractStructBase
      * This property is removable from request (nillable=true+minOccurs=0), therefore
      * if the value assigned to this property is null, it is removed from this object
      * @param string $comment
-     * @return \StructType\Products
+     * @return \Oihso\CSESDK\StructType\Products
      */
     public function setComment(?string $comment = null): self
     {

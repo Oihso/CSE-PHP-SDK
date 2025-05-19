@@ -81,7 +81,7 @@ class ListOfCorrespondences extends AbstractStructBase
      * This property is removable from request (nillable=true+minOccurs=0), therefore
      * if the value assigned to this property is null, it is removed from this object
      * @param string $items
-     * @return \StructType\ListOfCorrespondences
+     * @return \Oihso\CSESDK\StructType\ListOfCorrespondences
      */
     public function setItems(?string $items = null): self
     {
@@ -113,7 +113,7 @@ class ListOfCorrespondences extends AbstractStructBase
      * This property is removable from request (nillable=true+minOccurs=0), therefore
      * if the value assigned to this property is null, it is removed from this object
      * @param string $info
-     * @return \StructType\ListOfCorrespondences
+     * @return \Oihso\CSESDK\StructType\ListOfCorrespondences
      */
     public function setInfo(?string $info = null): self
     {
@@ -145,7 +145,7 @@ class ListOfCorrespondences extends AbstractStructBase
      * This property is removable from request (nillable=true+minOccurs=0), therefore
      * if the value assigned to this property is null, it is removed from this object
      * @param string $value
-     * @return \StructType\ListOfCorrespondences
+     * @return \Oihso\CSESDK\StructType\ListOfCorrespondences
      */
     public function setValue(?string $value = null): self
     {
@@ -177,7 +177,7 @@ class ListOfCorrespondences extends AbstractStructBase
      * This property is removable from request (nillable=true+minOccurs=0), therefore
      * if the value assigned to this property is null, it is removed from this object
      * @param int $qty
-     * @return \StructType\ListOfCorrespondences
+     * @return \Oihso\CSESDK\StructType\ListOfCorrespondences
      */
     public function setQty(?int $qty = null): self
     {

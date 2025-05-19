@@ -32,16 +32,16 @@ class Tracking extends AbstractStructBase
      * The documents
      * Meta information extracted from the WSDL
      * - nillable: true
-     * @var \StructType\Element|null
+     * @var \Oihso\CSESDK\StructType\Element|null
      */
-    protected ?\StructType\Element $documents = null;
+    protected ?\Oihso\CSESDK\StructType\Element $documents = null;
     /**
      * The parameters
      * Meta information extracted from the WSDL
      * - nillable: true
-     * @var \StructType\Element|null
+     * @var \Oihso\CSESDK\StructType\Element|null
      */
-    protected ?\StructType\Element $parameters = null;
+    protected ?\Oihso\CSESDK\StructType\Element $parameters = null;
     /**
      * Constructor method for Tracking
      * @uses Tracking::setLogin()
@@ -50,10 +50,10 @@ class Tracking extends AbstractStructBase
      * @uses Tracking::setParameters()
      * @param string $login
      * @param string $password
-     * @param \StructType\Element $documents
-     * @param \StructType\Element $parameters
+     * @param \Oihso\CSESDK\StructType\Element $documents
+     * @param \Oihso\CSESDK\StructType\Element $parameters
      */
-    public function __construct(?string $login = null, ?string $password = null, ?\StructType\Element $documents = null, ?\StructType\Element $parameters = null)
+    public function __construct(?string $login = null, ?string $password = null, ?\Oihso\CSESDK\StructType\Element $documents = null, ?\Oihso\CSESDK\StructType\Element $parameters = null)
     {
         $this
             ->setLogin($login)
@@ -72,7 +72,7 @@ class Tracking extends AbstractStructBase
     /**
      * Set login value
      * @param string $login
-     * @return \StructType\Tracking
+     * @return \Oihso\CSESDK\StructType\Tracking
      */
     public function setLogin(?string $login = null): self
     {
@@ -95,7 +95,7 @@ class Tracking extends AbstractStructBase
     /**
      * Set password value
      * @param string $password
-     * @return \StructType\Tracking
+     * @return \Oihso\CSESDK\StructType\Tracking
      */
     public function setPassword(?string $password = null): self
     {
@@ -109,18 +109,18 @@ class Tracking extends AbstractStructBase
     }
     /**
      * Get documents value
-     * @return \StructType\Element|null
+     * @return \Oihso\CSESDK\StructType\Element|null
      */
-    public function getDocuments(): ?\StructType\Element
+    public function getDocuments(): ?\Oihso\CSESDK\StructType\Element
     {
         return $this->documents;
     }
     /**
      * Set documents value
-     * @param \StructType\Element $documents
-     * @return \StructType\Tracking
+     * @param \Oihso\CSESDK\StructType\Element $documents
+     * @return \Oihso\CSESDK\StructType\Tracking
      */
-    public function setDocuments(?\StructType\Element $documents = null): self
+    public function setDocuments(?\Oihso\CSESDK\StructType\Element $documents = null): self
     {
         $this->documents = $documents;
         
@@ -128,18 +128,18 @@ class Tracking extends AbstractStructBase
     }
     /**
      * Get parameters value
-     * @return \StructType\Element|null
+     * @return \Oihso\CSESDK\StructType\Element|null
      */
-    public function getParameters(): ?\StructType\Element
+    public function getParameters(): ?\Oihso\CSESDK\StructType\Element
     {
         return $this->parameters;
     }
     /**
      * Set parameters value
-     * @param \StructType\Element $parameters
-     * @return \StructType\Tracking
+     * @param \Oihso\CSESDK\StructType\Element $parameters
+     * @return \Oihso\CSESDK\StructType\Tracking
      */
-    public function setParameters(?\StructType\Element $parameters = null): self
+    public function setParameters(?\Oihso\CSESDK\StructType\Element $parameters = null): self
     {
         $this->parameters = $parameters;
         

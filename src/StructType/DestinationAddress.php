@@ -194,7 +194,7 @@ class DestinationAddress extends AbstractStructBase
     /**
      * Set FreeForm value
      * @param bool $freeForm
-     * @return \StructType\DestinationAddress
+     * @return \Oihso\CSESDK\StructType\DestinationAddress
      */
     public function setFreeForm(?bool $freeForm = null): self
     {
@@ -222,7 +222,7 @@ class DestinationAddress extends AbstractStructBase
      * This property is removable from request (nillable=true+minOccurs=0), therefore
      * if the value assigned to this property is null, it is removed from this object
      * @param string $geography
-     * @return \StructType\DestinationAddress
+     * @return \Oihso\CSESDK\StructType\DestinationAddress
      */
     public function setGeography(?string $geography = null): self
     {
@@ -254,7 +254,7 @@ class DestinationAddress extends AbstractStructBase
      * This property is removable from request (nillable=true+minOccurs=0), therefore
      * if the value assigned to this property is null, it is removed from this object
      * @param string $street
-     * @return \StructType\DestinationAddress
+     * @return \Oihso\CSESDK\StructType\DestinationAddress
      */
     public function setStreet(?string $street = null): self
     {
@@ -286,7 +286,7 @@ class DestinationAddress extends AbstractStructBase
      * This property is removable from request (nillable=true+minOccurs=0), therefore
      * if the value assigned to this property is null, it is removed from this object
      * @param string $typeOfHome
-     * @return \StructType\DestinationAddress
+     * @return \Oihso\CSESDK\StructType\DestinationAddress
      */
     public function setTypeOfHome(?string $typeOfHome = null): self
     {
@@ -318,7 +318,7 @@ class DestinationAddress extends AbstractStructBase
      * This property is removable from request (nillable=true+minOccurs=0), therefore
      * if the value assigned to this property is null, it is removed from this object
      * @param string $home
-     * @return \StructType\DestinationAddress
+     * @return \Oihso\CSESDK\StructType\DestinationAddress
      */
     public function setHome(?string $home = null): self
     {
@@ -350,7 +350,7 @@ class DestinationAddress extends AbstractStructBase
      * This property is removable from request (nillable=true+minOccurs=0), therefore
      * if the value assigned to this property is null, it is removed from this object
      * @param string $typeOfBuilding
-     * @return \StructType\DestinationAddress
+     * @return \Oihso\CSESDK\StructType\DestinationAddress
      */
     public function setTypeOfBuilding(?string $typeOfBuilding = null): self
     {
@@ -382,7 +382,7 @@ class DestinationAddress extends AbstractStructBase
      * This property is removable from request (nillable=true+minOccurs=0), therefore
      * if the value assigned to this property is null, it is removed from this object
      * @param string $building
-     * @return \StructType\DestinationAddress
+     * @return \Oihso\CSESDK\StructType\DestinationAddress
      */
     public function setBuilding(?string $building = null): self
     {
@@ -414,7 +414,7 @@ class DestinationAddress extends AbstractStructBase
      * This property is removable from request (nillable=true+minOccurs=0), therefore
      * if the value assigned to this property is null, it is removed from this object
      * @param string $typeOfApartment
-     * @return \StructType\DestinationAddress
+     * @return \Oihso\CSESDK\StructType\DestinationAddress
      */
     public function setTypeOfApartment(?string $typeOfApartment = null): self
     {
@@ -446,7 +446,7 @@ class DestinationAddress extends AbstractStructBase
      * This property is removable from request (nillable=true+minOccurs=0), therefore
      * if the value assigned to this property is null, it is removed from this object
      * @param string $apartment
-     * @return \StructType\DestinationAddress
+     * @return \Oihso\CSESDK\StructType\DestinationAddress
      */
     public function setApartment(?string $apartment = null): self
     {
@@ -478,7 +478,7 @@ class DestinationAddress extends AbstractStructBase
      * This property is removable from request (nillable=true+minOccurs=0), therefore
      * if the value assigned to this property is null, it is removed from this object
      * @param string $index
-     * @return \StructType\DestinationAddress
+     * @return \Oihso\CSESDK\StructType\DestinationAddress
      */
     public function setIndex(?string $index = null): self
     {
@@ -510,7 +510,7 @@ class DestinationAddress extends AbstractStructBase
      * This property is removable from request (nillable=true+minOccurs=0), therefore
      * if the value assigned to this property is null, it is removed from this object
      * @param string $info
-     * @return \StructType\DestinationAddress
+     * @return \Oihso\CSESDK\StructType\DestinationAddress
      */
     public function setInfo(?string $info = null): self
     {
@@ -542,7 +542,7 @@ class DestinationAddress extends AbstractStructBase
      * This property is removable from request (nillable=true+minOccurs=0), therefore
      * if the value assigned to this property is null, it is removed from this object
      * @param string $comment
-     * @return \StructType\DestinationAddress
+     * @return \Oihso\CSESDK\StructType\DestinationAddress
      */
     public function setComment(?string $comment = null): self
     {
@@ -574,7 +574,7 @@ class DestinationAddress extends AbstractStructBase
      * This property is removable from request (nillable=true+minOccurs=0), therefore
      * if the value assigned to this property is null, it is removed from this object
      * @param string $country
-     * @return \StructType\DestinationAddress
+     * @return \Oihso\CSESDK\StructType\DestinationAddress
      */
     public function setCountry(?string $country = null): self
     {
@@ -606,7 +606,7 @@ class DestinationAddress extends AbstractStructBase
      * This property is removable from request (nillable=true+minOccurs=0), therefore
      * if the value assigned to this property is null, it is removed from this object
      * @param string $region
-     * @return \StructType\DestinationAddress
+     * @return \Oihso\CSESDK\StructType\DestinationAddress
      */
     public function setRegion(?string $region = null): self
     {
@@ -638,7 +638,7 @@ class DestinationAddress extends AbstractStructBase
      * This property is removable from request (nillable=true+minOccurs=0), therefore
      * if the value assigned to this property is null, it is removed from this object
      * @param string $disrcict
-     * @return \StructType\DestinationAddress
+     * @return \Oihso\CSESDK\StructType\DestinationAddress
      */
     public function setDisrcict(?string $disrcict = null): self
     {

@@ -18,10 +18,10 @@ class Report extends AbstractSoapClientBase
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \StructType\Report $parameters
-     * @return \StructType\ReportResponse|bool
+     * @param \Oihso\CSESDK\StructType\Report $parameters
+     * @return \Oihso\CSESDK\StructType\ReportResponse|bool
      */
-    public function Report(\StructType\Report $parameters)
+    public function Report(\Oihso\CSESDK\StructType\Report $parameters)
     {
         try {
             $this->setResult($resultReport = $this->getSoapClient()->__soapCall('Report', [
@@ -38,7 +38,7 @@ class Report extends AbstractSoapClientBase
     /**
      * Returns the result
      * @see AbstractSoapClientBase::getResult()
-     * @return \StructType\ReportResponse
+     * @return \Oihso\CSESDK\StructType\ReportResponse
      */
     public function getResult()
     {

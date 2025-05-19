@@ -21,9 +21,9 @@ class SaveOwnerOfTheGoods extends AbstractStructBase
     protected ?string $Password = null;
     /**
      * The ListAccount
-     * @var \StructType\ArrayClientAccount|null
+     * @var \Oihso\CSESDK\StructType\ArrayClientAccount|null
      */
-    protected ?\StructType\ArrayClientAccount $ListAccount = null;
+    protected ?\Oihso\CSESDK\StructType\ArrayClientAccount $ListAccount = null;
     /**
      * The Login
      * Meta information extracted from the WSDL
@@ -37,10 +37,10 @@ class SaveOwnerOfTheGoods extends AbstractStructBase
      * @uses SaveOwnerOfTheGoods::setListAccount()
      * @uses SaveOwnerOfTheGoods::setLogin()
      * @param string $password
-     * @param \StructType\ArrayClientAccount $listAccount
+     * @param \Oihso\CSESDK\StructType\ArrayClientAccount $listAccount
      * @param string $login
      */
-    public function __construct(?string $password = null, ?\StructType\ArrayClientAccount $listAccount = null, ?string $login = null)
+    public function __construct(?string $password = null, ?\Oihso\CSESDK\StructType\ArrayClientAccount $listAccount = null, ?string $login = null)
     {
         $this
             ->setPassword($password)
@@ -58,7 +58,7 @@ class SaveOwnerOfTheGoods extends AbstractStructBase
     /**
      * Set Password value
      * @param string $password
-     * @return \StructType\SaveOwnerOfTheGoods
+     * @return \Oihso\CSESDK\StructType\SaveOwnerOfTheGoods
      */
     public function setPassword(?string $password = null): self
     {
@@ -72,18 +72,18 @@ class SaveOwnerOfTheGoods extends AbstractStructBase
     }
     /**
      * Get ListAccount value
-     * @return \StructType\ArrayClientAccount|null
+     * @return \Oihso\CSESDK\StructType\ArrayClientAccount|null
      */
-    public function getListAccount(): ?\StructType\ArrayClientAccount
+    public function getListAccount(): ?\Oihso\CSESDK\StructType\ArrayClientAccount
     {
         return $this->ListAccount;
     }
     /**
      * Set ListAccount value
-     * @param \StructType\ArrayClientAccount $listAccount
-     * @return \StructType\SaveOwnerOfTheGoods
+     * @param \Oihso\CSESDK\StructType\ArrayClientAccount $listAccount
+     * @return \Oihso\CSESDK\StructType\SaveOwnerOfTheGoods
      */
-    public function setListAccount(?\StructType\ArrayClientAccount $listAccount = null): self
+    public function setListAccount(?\Oihso\CSESDK\StructType\ArrayClientAccount $listAccount = null): self
     {
         $this->ListAccount = $listAccount;
         
@@ -100,7 +100,7 @@ class SaveOwnerOfTheGoods extends AbstractStructBase
     /**
      * Set Login value
      * @param string $login
-     * @return \StructType\SaveOwnerOfTheGoods
+     * @return \Oihso\CSESDK\StructType\SaveOwnerOfTheGoods
      */
     public function setLogin(?string $login = null): self
     {

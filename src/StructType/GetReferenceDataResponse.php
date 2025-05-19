@@ -16,33 +16,33 @@ class GetReferenceDataResponse extends AbstractStructBase
 {
     /**
      * The return
-     * @var \StructType\Element|null
+     * @var \Oihso\CSESDK\StructType\Element|null
      */
-    protected ?\StructType\Element $return = null;
+    protected ?\Oihso\CSESDK\StructType\Element $return = null;
     /**
      * Constructor method for GetReferenceDataResponse
      * @uses GetReferenceDataResponse::setReturn()
-     * @param \StructType\Element $return
+     * @param \Oihso\CSESDK\StructType\Element $return
      */
-    public function __construct(?\StructType\Element $return = null)
+    public function __construct(?\Oihso\CSESDK\StructType\Element $return = null)
     {
         $this
             ->setReturn($return);
     }
     /**
      * Get return value
-     * @return \StructType\Element|null
+     * @return \Oihso\CSESDK\StructType\Element|null
      */
-    public function getReturn(): ?\StructType\Element
+    public function getReturn(): ?\Oihso\CSESDK\StructType\Element
     {
         return $this->return;
     }
     /**
      * Set return value
-     * @param \StructType\Element $return
-     * @return \StructType\GetReferenceDataResponse
+     * @param \Oihso\CSESDK\StructType\Element $return
+     * @return \Oihso\CSESDK\StructType\GetReferenceDataResponse
      */
-    public function setReturn(?\StructType\Element $return = null): self
+    public function setReturn(?\Oihso\CSESDK\StructType\Element $return = null): self
     {
         $this->return = $return;
         

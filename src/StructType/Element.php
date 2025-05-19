@@ -33,7 +33,7 @@ class Element extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - nillable: true
-     * @var \StructType\Element[]
+     * @var \Oihso\CSESDK\StructType\Element[]
      */
     protected ?array $CultureSpecificValues = null;
     /**
@@ -50,7 +50,7 @@ class Element extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - nillable: true
-     * @var \StructType\Element[]
+     * @var \Oihso\CSESDK\StructType\Element[]
      */
     protected ?array $Properties = null;
     /**
@@ -59,7 +59,7 @@ class Element extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - nillable: true
-     * @var \StructType\Element[]
+     * @var \Oihso\CSESDK\StructType\Element[]
      */
     protected ?array $Fields = null;
     /**
@@ -68,7 +68,7 @@ class Element extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - nillable: true
-     * @var \StructType\Element[]
+     * @var \Oihso\CSESDK\StructType\Element[]
      */
     protected ?array $List = null;
     /**
@@ -77,7 +77,7 @@ class Element extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - nillable: true
-     * @var \StructType\Element[]
+     * @var \Oihso\CSESDK\StructType\Element[]
      */
     protected ?array $Tables = null;
     /**
@@ -95,7 +95,7 @@ class Element extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - nillable: true
-     * @var \StructType\Row[]
+     * @var \Oihso\CSESDK\StructType\Row[]
      */
     protected ?array $Rows = null;
     /**
@@ -122,14 +122,14 @@ class Element extends AbstractStructBase
      * @uses Element::setBData()
      * @param string $key
      * @param string $value
-     * @param \StructType\Element[] $cultureSpecificValues
+     * @param \Oihso\CSESDK\StructType\Element[] $cultureSpecificValues
      * @param string $valueType
-     * @param \StructType\Element[] $properties
-     * @param \StructType\Element[] $fields
-     * @param \StructType\Element[] $list
-     * @param \StructType\Element[] $tables
+     * @param \Oihso\CSESDK\StructType\Element[] $properties
+     * @param \Oihso\CSESDK\StructType\Element[] $fields
+     * @param \Oihso\CSESDK\StructType\Element[] $list
+     * @param \Oihso\CSESDK\StructType\Element[] $tables
      * @param string[] $values
-     * @param \StructType\Row[] $rows
+     * @param \Oihso\CSESDK\StructType\Row[] $rows
      * @param string[] $bData
      */
     public function __construct(?string $key = null, ?string $value = null, ?array $cultureSpecificValues = null, ?string $valueType = null, ?array $properties = null, ?array $fields = null, ?array $list = null, ?array $tables = null, ?array $values = null, ?array $rows = null, ?array $bData = null)
@@ -158,7 +158,7 @@ class Element extends AbstractStructBase
     /**
      * Set Key value
      * @param string $key
-     * @return \StructType\Element
+     * @return \Oihso\CSESDK\StructType\Element
      */
     public function setKey(?string $key = null): self
     {
@@ -186,7 +186,7 @@ class Element extends AbstractStructBase
      * This property is removable from request (nillable=true+minOccurs=0), therefore
      * if the value assigned to this property is null, it is removed from this object
      * @param string $value
-     * @return \StructType\Element
+     * @return \Oihso\CSESDK\StructType\Element
      */
     public function setValue(?string $value = null): self
     {
@@ -207,7 +207,7 @@ class Element extends AbstractStructBase
      * An additional test has been added (isset) before returning the property value as
      * this property may have been unset before, due to the fact that this property is
      * removable from the request (nillable=true+minOccurs=0)
-     * @return \StructType\Element[]
+     * @return \Oihso\CSESDK\StructType\Element[]
      */
     public function getCultureSpecificValues(): ?array
     {
@@ -229,12 +229,12 @@ class Element extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $elementCultureSpecificValuesItem) {
             // validation for constraint: itemType
-            if (!$elementCultureSpecificValuesItem instanceof \StructType\Element) {
+            if (!$elementCultureSpecificValuesItem instanceof \Oihso\CSESDK\StructType\Element) {
                 $invalidValues[] = is_object($elementCultureSpecificValuesItem) ? get_class($elementCultureSpecificValuesItem) : sprintf('%s(%s)', gettype($elementCultureSpecificValuesItem), var_export($elementCultureSpecificValuesItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The CultureSpecificValues property can only contain items of type \StructType\Element, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The CultureSpecificValues property can only contain items of type \Oihso\CSESDK\StructType\Element, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -245,8 +245,8 @@ class Element extends AbstractStructBase
      * This property is removable from request (nillable=true+minOccurs=0), therefore
      * if the value assigned to this property is null, it is removed from this object
      * @throws InvalidArgumentException
-     * @param \StructType\Element[] $cultureSpecificValues
-     * @return \StructType\Element
+     * @param \Oihso\CSESDK\StructType\Element[] $cultureSpecificValues
+     * @return \Oihso\CSESDK\StructType\Element
      */
     public function setCultureSpecificValues(?array $cultureSpecificValues = null): self
     {
@@ -265,14 +265,14 @@ class Element extends AbstractStructBase
     /**
      * Add item to CultureSpecificValues value
      * @throws InvalidArgumentException
-     * @param \StructType\Element $item
-     * @return \StructType\Element
+     * @param \Oihso\CSESDK\StructType\Element $item
+     * @return \Oihso\CSESDK\StructType\Element
      */
-    public function addToCultureSpecificValues(\StructType\Element $item): self
+    public function addToCultureSpecificValues(\Oihso\CSESDK\StructType\Element $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Element) {
-            throw new InvalidArgumentException(sprintf('The CultureSpecificValues property can only contain items of type \StructType\Element, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Oihso\CSESDK\StructType\Element) {
+            throw new InvalidArgumentException(sprintf('The CultureSpecificValues property can only contain items of type \Oihso\CSESDK\StructType\Element, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->CultureSpecificValues[] = $item;
         
@@ -294,7 +294,7 @@ class Element extends AbstractStructBase
      * This property is removable from request (nillable=true+minOccurs=0), therefore
      * if the value assigned to this property is null, it is removed from this object
      * @param string $valueType
-     * @return \StructType\Element
+     * @return \Oihso\CSESDK\StructType\Element
      */
     public function setValueType(?string $valueType = null): self
     {
@@ -315,7 +315,7 @@ class Element extends AbstractStructBase
      * An additional test has been added (isset) before returning the property value as
      * this property may have been unset before, due to the fact that this property is
      * removable from the request (nillable=true+minOccurs=0)
-     * @return \StructType\Element[]
+     * @return \Oihso\CSESDK\StructType\Element[]
      */
     public function getProperties(): ?array
     {
@@ -337,12 +337,12 @@ class Element extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $elementPropertiesItem) {
             // validation for constraint: itemType
-            if (!$elementPropertiesItem instanceof \StructType\Element) {
+            if (!$elementPropertiesItem instanceof \Oihso\CSESDK\StructType\Element) {
                 $invalidValues[] = is_object($elementPropertiesItem) ? get_class($elementPropertiesItem) : sprintf('%s(%s)', gettype($elementPropertiesItem), var_export($elementPropertiesItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The Properties property can only contain items of type \StructType\Element, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The Properties property can only contain items of type \Oihso\CSESDK\StructType\Element, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -353,8 +353,8 @@ class Element extends AbstractStructBase
      * This property is removable from request (nillable=true+minOccurs=0), therefore
      * if the value assigned to this property is null, it is removed from this object
      * @throws InvalidArgumentException
-     * @param \StructType\Element[] $properties
-     * @return \StructType\Element
+     * @param \Oihso\CSESDK\StructType\Element[] $properties
+     * @return \Oihso\CSESDK\StructType\Element
      */
     public function setProperties(?array $properties = null): self
     {
@@ -373,14 +373,14 @@ class Element extends AbstractStructBase
     /**
      * Add item to Properties value
      * @throws InvalidArgumentException
-     * @param \StructType\Element $item
-     * @return \StructType\Element
+     * @param \Oihso\CSESDK\StructType\Element $item
+     * @return \Oihso\CSESDK\StructType\Element
      */
-    public function addToProperties(\StructType\Element $item): self
+    public function addToProperties(\Oihso\CSESDK\StructType\Element $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Element) {
-            throw new InvalidArgumentException(sprintf('The Properties property can only contain items of type \StructType\Element, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Oihso\CSESDK\StructType\Element) {
+            throw new InvalidArgumentException(sprintf('The Properties property can only contain items of type \Oihso\CSESDK\StructType\Element, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->Properties[] = $item;
         
@@ -391,7 +391,7 @@ class Element extends AbstractStructBase
      * An additional test has been added (isset) before returning the property value as
      * this property may have been unset before, due to the fact that this property is
      * removable from the request (nillable=true+minOccurs=0)
-     * @return \StructType\Element[]
+     * @return \Oihso\CSESDK\StructType\Element[]
      */
     public function getFields(): ?array
     {
@@ -413,12 +413,12 @@ class Element extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $elementFieldsItem) {
             // validation for constraint: itemType
-            if (!$elementFieldsItem instanceof \StructType\Element) {
+            if (!$elementFieldsItem instanceof \Oihso\CSESDK\StructType\Element) {
                 $invalidValues[] = is_object($elementFieldsItem) ? get_class($elementFieldsItem) : sprintf('%s(%s)', gettype($elementFieldsItem), var_export($elementFieldsItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The Fields property can only contain items of type \StructType\Element, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The Fields property can only contain items of type \Oihso\CSESDK\StructType\Element, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -429,8 +429,8 @@ class Element extends AbstractStructBase
      * This property is removable from request (nillable=true+minOccurs=0), therefore
      * if the value assigned to this property is null, it is removed from this object
      * @throws InvalidArgumentException
-     * @param \StructType\Element[] $fields
-     * @return \StructType\Element
+     * @param \Oihso\CSESDK\StructType\Element[] $fields
+     * @return \Oihso\CSESDK\StructType\Element
      */
     public function setFields(?array $fields = null): self
     {
@@ -449,14 +449,14 @@ class Element extends AbstractStructBase
     /**
      * Add item to Fields value
      * @throws InvalidArgumentException
-     * @param \StructType\Element $item
-     * @return \StructType\Element
+     * @param \Oihso\CSESDK\StructType\Element $item
+     * @return \Oihso\CSESDK\StructType\Element
      */
-    public function addToFields(\StructType\Element $item): self
+    public function addToFields(\Oihso\CSESDK\StructType\Element $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Element) {
-            throw new InvalidArgumentException(sprintf('The Fields property can only contain items of type \StructType\Element, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Oihso\CSESDK\StructType\Element) {
+            throw new InvalidArgumentException(sprintf('The Fields property can only contain items of type \Oihso\CSESDK\StructType\Element, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->Fields[] = $item;
         
@@ -467,7 +467,7 @@ class Element extends AbstractStructBase
      * An additional test has been added (isset) before returning the property value as
      * this property may have been unset before, due to the fact that this property is
      * removable from the request (nillable=true+minOccurs=0)
-     * @return \StructType\Element[]
+     * @return \Oihso\CSESDK\StructType\Element[]
      */
     public function getList(): ?array
     {
@@ -489,12 +489,12 @@ class Element extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $elementListItem) {
             // validation for constraint: itemType
-            if (!$elementListItem instanceof \StructType\Element) {
+            if (!$elementListItem instanceof \Oihso\CSESDK\StructType\Element) {
                 $invalidValues[] = is_object($elementListItem) ? get_class($elementListItem) : sprintf('%s(%s)', gettype($elementListItem), var_export($elementListItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The List property can only contain items of type \StructType\Element, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The List property can only contain items of type \Oihso\CSESDK\StructType\Element, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -505,8 +505,8 @@ class Element extends AbstractStructBase
      * This property is removable from request (nillable=true+minOccurs=0), therefore
      * if the value assigned to this property is null, it is removed from this object
      * @throws InvalidArgumentException
-     * @param \StructType\Element[] $list
-     * @return \StructType\Element
+     * @param \Oihso\CSESDK\StructType\Element[] $list
+     * @return \Oihso\CSESDK\StructType\Element
      */
     public function setList(?array $list = null): self
     {
@@ -525,14 +525,14 @@ class Element extends AbstractStructBase
     /**
      * Add item to List value
      * @throws InvalidArgumentException
-     * @param \StructType\Element $item
-     * @return \StructType\Element
+     * @param \Oihso\CSESDK\StructType\Element $item
+     * @return \Oihso\CSESDK\StructType\Element
      */
-    public function addToList(\StructType\Element $item): self
+    public function addToList(\Oihso\CSESDK\StructType\Element $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Element) {
-            throw new InvalidArgumentException(sprintf('The List property can only contain items of type \StructType\Element, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Oihso\CSESDK\StructType\Element) {
+            throw new InvalidArgumentException(sprintf('The List property can only contain items of type \Oihso\CSESDK\StructType\Element, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->List[] = $item;
         
@@ -543,7 +543,7 @@ class Element extends AbstractStructBase
      * An additional test has been added (isset) before returning the property value as
      * this property may have been unset before, due to the fact that this property is
      * removable from the request (nillable=true+minOccurs=0)
-     * @return \StructType\Element[]
+     * @return \Oihso\CSESDK\StructType\Element[]
      */
     public function getTables(): ?array
     {
@@ -565,12 +565,12 @@ class Element extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $elementTablesItem) {
             // validation for constraint: itemType
-            if (!$elementTablesItem instanceof \StructType\Element) {
+            if (!$elementTablesItem instanceof \Oihso\CSESDK\StructType\Element) {
                 $invalidValues[] = is_object($elementTablesItem) ? get_class($elementTablesItem) : sprintf('%s(%s)', gettype($elementTablesItem), var_export($elementTablesItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The Tables property can only contain items of type \StructType\Element, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The Tables property can only contain items of type \Oihso\CSESDK\StructType\Element, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -581,8 +581,8 @@ class Element extends AbstractStructBase
      * This property is removable from request (nillable=true+minOccurs=0), therefore
      * if the value assigned to this property is null, it is removed from this object
      * @throws InvalidArgumentException
-     * @param \StructType\Element[] $tables
-     * @return \StructType\Element
+     * @param \Oihso\CSESDK\StructType\Element[] $tables
+     * @return \Oihso\CSESDK\StructType\Element
      */
     public function setTables(?array $tables = null): self
     {
@@ -601,14 +601,14 @@ class Element extends AbstractStructBase
     /**
      * Add item to Tables value
      * @throws InvalidArgumentException
-     * @param \StructType\Element $item
-     * @return \StructType\Element
+     * @param \Oihso\CSESDK\StructType\Element $item
+     * @return \Oihso\CSESDK\StructType\Element
      */
-    public function addToTables(\StructType\Element $item): self
+    public function addToTables(\Oihso\CSESDK\StructType\Element $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Element) {
-            throw new InvalidArgumentException(sprintf('The Tables property can only contain items of type \StructType\Element, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Oihso\CSESDK\StructType\Element) {
+            throw new InvalidArgumentException(sprintf('The Tables property can only contain items of type \Oihso\CSESDK\StructType\Element, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->Tables[] = $item;
         
@@ -658,7 +658,7 @@ class Element extends AbstractStructBase
      * if the value assigned to this property is null, it is removed from this object
      * @throws InvalidArgumentException
      * @param string[] $values
-     * @return \StructType\Element
+     * @return \Oihso\CSESDK\StructType\Element
      */
     public function setValues(?array $values = null): self
     {
@@ -678,7 +678,7 @@ class Element extends AbstractStructBase
      * Add item to Values value
      * @throws InvalidArgumentException
      * @param string $item
-     * @return \StructType\Element
+     * @return \Oihso\CSESDK\StructType\Element
      */
     public function addToValues(string $item): self
     {
@@ -695,7 +695,7 @@ class Element extends AbstractStructBase
      * An additional test has been added (isset) before returning the property value as
      * this property may have been unset before, due to the fact that this property is
      * removable from the request (nillable=true+minOccurs=0)
-     * @return \StructType\Row[]
+     * @return \Oihso\CSESDK\StructType\Row[]
      */
     public function getRows(): ?array
     {
@@ -717,12 +717,12 @@ class Element extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $elementRowsItem) {
             // validation for constraint: itemType
-            if (!$elementRowsItem instanceof \StructType\Row) {
+            if (!$elementRowsItem instanceof \Oihso\CSESDK\StructType\Row) {
                 $invalidValues[] = is_object($elementRowsItem) ? get_class($elementRowsItem) : sprintf('%s(%s)', gettype($elementRowsItem), var_export($elementRowsItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The Rows property can only contain items of type \StructType\Row, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The Rows property can only contain items of type \Oihso\CSESDK\StructType\Row, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -733,8 +733,8 @@ class Element extends AbstractStructBase
      * This property is removable from request (nillable=true+minOccurs=0), therefore
      * if the value assigned to this property is null, it is removed from this object
      * @throws InvalidArgumentException
-     * @param \StructType\Row[] $rows
-     * @return \StructType\Element
+     * @param \Oihso\CSESDK\StructType\Row[] $rows
+     * @return \Oihso\CSESDK\StructType\Element
      */
     public function setRows(?array $rows = null): self
     {
@@ -753,14 +753,14 @@ class Element extends AbstractStructBase
     /**
      * Add item to Rows value
      * @throws InvalidArgumentException
-     * @param \StructType\Row $item
-     * @return \StructType\Element
+     * @param \Oihso\CSESDK\StructType\Row $item
+     * @return \Oihso\CSESDK\StructType\Element
      */
-    public function addToRows(\StructType\Row $item): self
+    public function addToRows(\Oihso\CSESDK\StructType\Row $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Row) {
-            throw new InvalidArgumentException(sprintf('The Rows property can only contain items of type \StructType\Row, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Oihso\CSESDK\StructType\Row) {
+            throw new InvalidArgumentException(sprintf('The Rows property can only contain items of type \Oihso\CSESDK\StructType\Row, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->Rows[] = $item;
         
@@ -810,7 +810,7 @@ class Element extends AbstractStructBase
      * if the value assigned to this property is null, it is removed from this object
      * @throws InvalidArgumentException
      * @param string[] $bData
-     * @return \StructType\Element
+     * @return \Oihso\CSESDK\StructType\Element
      */
     public function setBData(?array $bData = null): self
     {
@@ -830,7 +830,7 @@ class Element extends AbstractStructBase
      * Add item to BData value
      * @throws InvalidArgumentException
      * @param string $item
-     * @return \StructType\Element
+     * @return \Oihso\CSESDK\StructType\Element
      */
     public function addToBData(string $item): self
     {

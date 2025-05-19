@@ -18,10 +18,10 @@ class Delete extends AbstractSoapClientBase
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \StructType\DeleteDocuments $parameters
-     * @return \StructType\DeleteDocumentsResponse|bool
+     * @param \Oihso\CSESDK\StructType\DeleteDocuments $parameters
+     * @return \Oihso\CSESDK\StructType\DeleteDocumentsResponse|bool
      */
-    public function DeleteDocuments(\StructType\DeleteDocuments $parameters)
+    public function DeleteDocuments(\Oihso\CSESDK\StructType\DeleteDocuments $parameters)
     {
         try {
             $this->setResult($resultDeleteDocuments = $this->getSoapClient()->__soapCall('DeleteDocuments', [
@@ -40,10 +40,10 @@ class Delete extends AbstractSoapClientBase
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \StructType\DeleteGMH $parameters
-     * @return \StructType\DeleteGMHResponse|bool
+     * @param \Oihso\CSESDK\StructType\DeleteGMH $parameters
+     * @return \Oihso\CSESDK\StructType\DeleteGMHResponse|bool
      */
-    public function DeleteGMH(\StructType\DeleteGMH $parameters)
+    public function DeleteGMH(\Oihso\CSESDK\StructType\DeleteGMH $parameters)
     {
         try {
             $this->setResult($resultDeleteGMH = $this->getSoapClient()->__soapCall('DeleteGMH', [
@@ -60,7 +60,7 @@ class Delete extends AbstractSoapClientBase
     /**
      * Returns the result
      * @see AbstractSoapClientBase::getResult()
-     * @return \StructType\DeleteDocumentsResponse|\StructType\DeleteGMHResponse
+     * @return \Oihso\CSESDK\StructType\DeleteDocumentsResponse|\Oihso\CSESDK\StructType\DeleteGMHResponse
      */
     public function getResult()
     {

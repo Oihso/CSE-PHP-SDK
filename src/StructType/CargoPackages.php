@@ -136,7 +136,7 @@ class CargoPackages extends AbstractStructBase
      * This property is removable from request (nillable=true+minOccurs=0), therefore
      * if the value assigned to this property is null, it is removed from this object
      * @param float $length
-     * @return \StructType\CargoPackages
+     * @return \Oihso\CSESDK\StructType\CargoPackages
      */
     public function setLength(?float $length = null): self
     {
@@ -168,7 +168,7 @@ class CargoPackages extends AbstractStructBase
      * This property is removable from request (nillable=true+minOccurs=0), therefore
      * if the value assigned to this property is null, it is removed from this object
      * @param float $width
-     * @return \StructType\CargoPackages
+     * @return \Oihso\CSESDK\StructType\CargoPackages
      */
     public function setWidth(?float $width = null): self
     {
@@ -200,7 +200,7 @@ class CargoPackages extends AbstractStructBase
      * This property is removable from request (nillable=true+minOccurs=0), therefore
      * if the value assigned to this property is null, it is removed from this object
      * @param float $height
-     * @return \StructType\CargoPackages
+     * @return \Oihso\CSESDK\StructType\CargoPackages
      */
     public function setHeight(?float $height = null): self
     {
@@ -232,7 +232,7 @@ class CargoPackages extends AbstractStructBase
      * This property is removable from request (nillable=true+minOccurs=0), therefore
      * if the value assigned to this property is null, it is removed from this object
      * @param string $package
-     * @return \StructType\CargoPackages
+     * @return \Oihso\CSESDK\StructType\CargoPackages
      */
     public function setPackage(?string $package = null): self
     {
@@ -264,7 +264,7 @@ class CargoPackages extends AbstractStructBase
      * This property is removable from request (nillable=true+minOccurs=0), therefore
      * if the value assigned to this property is null, it is removed from this object
      * @param float $weight
-     * @return \StructType\CargoPackages
+     * @return \Oihso\CSESDK\StructType\CargoPackages
      */
     public function setWeight(?float $weight = null): self
     {
@@ -296,7 +296,7 @@ class CargoPackages extends AbstractStructBase
      * This property is removable from request (nillable=true+minOccurs=0), therefore
      * if the value assigned to this property is null, it is removed from this object
      * @param float $volumeWeight
-     * @return \StructType\CargoPackages
+     * @return \Oihso\CSESDK\StructType\CargoPackages
      */
     public function setVolumeWeight(?float $volumeWeight = null): self
     {
@@ -328,7 +328,7 @@ class CargoPackages extends AbstractStructBase
      * This property is removable from request (nillable=true+minOccurs=0), therefore
      * if the value assigned to this property is null, it is removed from this object
      * @param int $packageQty
-     * @return \StructType\CargoPackages
+     * @return \Oihso\CSESDK\StructType\CargoPackages
      */
     public function setPackageQty(?int $packageQty = null): self
     {
@@ -360,7 +360,7 @@ class CargoPackages extends AbstractStructBase
      * This property is removable from request (nillable=true+minOccurs=0), therefore
      * if the value assigned to this property is null, it is removed from this object
      * @param string $packageID
-     * @return \StructType\CargoPackages
+     * @return \Oihso\CSESDK\StructType\CargoPackages
      */
     public function setPackageID(?string $packageID = null): self
     {
@@ -392,7 +392,7 @@ class CargoPackages extends AbstractStructBase
      * This property is removable from request (nillable=true+minOccurs=0), therefore
      * if the value assigned to this property is null, it is removed from this object
      * @param float $volume
-     * @return \StructType\CargoPackages
+     * @return \Oihso\CSESDK\StructType\CargoPackages
      */
     public function setVolume(?float $volume = null): self
     {

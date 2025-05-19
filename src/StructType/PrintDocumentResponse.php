@@ -18,33 +18,33 @@ class PrintDocumentResponse extends AbstractStructBase
      * The return
      * Meta information extracted from the WSDL
      * - nillable: true
-     * @var \StructType\ResultArrayPrint|null
+     * @var \Oihso\CSESDK\StructType\ResultArrayPrint|null
      */
-    protected ?\StructType\ResultArrayPrint $return = null;
+    protected ?\Oihso\CSESDK\StructType\ResultArrayPrint $return = null;
     /**
      * Constructor method for PrintDocumentResponse
      * @uses PrintDocumentResponse::setReturn()
-     * @param \StructType\ResultArrayPrint $return
+     * @param \Oihso\CSESDK\StructType\ResultArrayPrint $return
      */
-    public function __construct(?\StructType\ResultArrayPrint $return = null)
+    public function __construct(?\Oihso\CSESDK\StructType\ResultArrayPrint $return = null)
     {
         $this
             ->setReturn($return);
     }
     /**
      * Get return value
-     * @return \StructType\ResultArrayPrint|null
+     * @return \Oihso\CSESDK\StructType\ResultArrayPrint|null
      */
-    public function getReturn(): ?\StructType\ResultArrayPrint
+    public function getReturn(): ?\Oihso\CSESDK\StructType\ResultArrayPrint
     {
         return $this->return;
     }
     /**
      * Set return value
-     * @param \StructType\ResultArrayPrint $return
-     * @return \StructType\PrintDocumentResponse
+     * @param \Oihso\CSESDK\StructType\ResultArrayPrint $return
+     * @return \Oihso\CSESDK\StructType\PrintDocumentResponse
      */
-    public function setReturn(?\StructType\ResultArrayPrint $return = null): self
+    public function setReturn(?\Oihso\CSESDK\StructType\ResultArrayPrint $return = null): self
     {
         $this->return = $return;
         

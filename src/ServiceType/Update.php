@@ -18,10 +18,10 @@ class Update extends AbstractSoapClientBase
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \StructType\UpdateClientProducts $parameters
-     * @return \StructType\UpdateClientProductsResponse|bool
+     * @param \Oihso\CSESDK\StructType\UpdateClientProducts $parameters
+     * @return \Oihso\CSESDK\StructType\UpdateClientProductsResponse|bool
      */
-    public function UpdateClientProducts(\StructType\UpdateClientProducts $parameters)
+    public function UpdateClientProducts(\Oihso\CSESDK\StructType\UpdateClientProducts $parameters)
     {
         try {
             $this->setResult($resultUpdateClientProducts = $this->getSoapClient()->__soapCall('UpdateClientProducts', [
@@ -40,10 +40,10 @@ class Update extends AbstractSoapClientBase
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \StructType\UpdateDocument $parameters
-     * @return \StructType\UpdateDocumentResponse|bool
+     * @param \Oihso\CSESDK\StructType\UpdateDocument $parameters
+     * @return \Oihso\CSESDK\StructType\UpdateDocumentResponse|bool
      */
-    public function UpdateDocument(\StructType\UpdateDocument $parameters)
+    public function UpdateDocument(\Oihso\CSESDK\StructType\UpdateDocument $parameters)
     {
         try {
             $this->setResult($resultUpdateDocument = $this->getSoapClient()->__soapCall('UpdateDocument', [
@@ -60,7 +60,7 @@ class Update extends AbstractSoapClientBase
     /**
      * Returns the result
      * @see AbstractSoapClientBase::getResult()
-     * @return \StructType\UpdateClientProductsResponse|\StructType\UpdateDocumentResponse
+     * @return \Oihso\CSESDK\StructType\UpdateClientProductsResponse|\Oihso\CSESDK\StructType\UpdateDocumentResponse
      */
     public function getResult()
     {

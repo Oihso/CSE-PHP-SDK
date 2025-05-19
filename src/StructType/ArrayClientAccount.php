@@ -88,7 +88,7 @@ class ArrayClientAccount extends AbstractStructBase
     /**
      * Set OwnerName value
      * @param string $ownerName
-     * @return \StructType\ArrayClientAccount
+     * @return \Oihso\CSESDK\StructType\ArrayClientAccount
      */
     public function setOwnerName(?string $ownerName = null): self
     {
@@ -111,7 +111,7 @@ class ArrayClientAccount extends AbstractStructBase
     /**
      * Set OwnerLegalName value
      * @param string $ownerLegalName
-     * @return \StructType\ArrayClientAccount
+     * @return \Oihso\CSESDK\StructType\ArrayClientAccount
      */
     public function setOwnerLegalName(?string $ownerLegalName = null): self
     {
@@ -134,7 +134,7 @@ class ArrayClientAccount extends AbstractStructBase
     /**
      * Set OwnerINN value
      * @param string $ownerINN
-     * @return \StructType\ArrayClientAccount
+     * @return \Oihso\CSESDK\StructType\ArrayClientAccount
      */
     public function setOwnerINN(?string $ownerINN = null): self
     {
@@ -157,7 +157,7 @@ class ArrayClientAccount extends AbstractStructBase
     /**
      * Set OwnerKPP value
      * @param string $ownerKPP
-     * @return \StructType\ArrayClientAccount
+     * @return \Oihso\CSESDK\StructType\ArrayClientAccount
      */
     public function setOwnerKPP(?string $ownerKPP = null): self
     {
@@ -180,7 +180,7 @@ class ArrayClientAccount extends AbstractStructBase
     /**
      * Set AccountName value
      * @param string $accountName
-     * @return \StructType\ArrayClientAccount
+     * @return \Oihso\CSESDK\StructType\ArrayClientAccount
      */
     public function setAccountName(?string $accountName = null): self
     {
@@ -203,7 +203,7 @@ class ArrayClientAccount extends AbstractStructBase
     /**
      * Set AccountBIK value
      * @param string $accountBIK
-     * @return \StructType\ArrayClientAccount
+     * @return \Oihso\CSESDK\StructType\ArrayClientAccount
      */
     public function setAccountBIK(?string $accountBIK = null): self
     {
@@ -226,7 +226,7 @@ class ArrayClientAccount extends AbstractStructBase
     /**
      * Set AccountNumber value
      * @param string $accountNumber
-     * @return \StructType\ArrayClientAccount
+     * @return \Oihso\CSESDK\StructType\ArrayClientAccount
      */
     public function setAccountNumber(?string $accountNumber = null): self
     {

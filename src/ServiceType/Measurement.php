@@ -18,10 +18,10 @@ class Measurement extends AbstractSoapClientBase
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \StructType\Measurement $parameters
-     * @return \StructType\MeasurementResponse|bool
+     * @param \Oihso\CSESDK\StructType\Measurement $parameters
+     * @return \Oihso\CSESDK\StructType\MeasurementResponse|bool
      */
-    public function Measurement(\StructType\Measurement $parameters)
+    public function Measurement(\Oihso\CSESDK\StructType\Measurement $parameters)
     {
         try {
             $this->setResult($resultMeasurement = $this->getSoapClient()->__soapCall('Measurement', [
@@ -38,7 +38,7 @@ class Measurement extends AbstractSoapClientBase
     /**
      * Returns the result
      * @see AbstractSoapClientBase::getResult()
-     * @return \StructType\MeasurementResponse
+     * @return \Oihso\CSESDK\StructType\MeasurementResponse
      */
     public function getResult()
     {

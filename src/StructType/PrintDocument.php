@@ -47,9 +47,9 @@ class PrintDocument extends AbstractStructBase
      * The Parametrs
      * Meta information extracted from the WSDL
      * - nillable: true
-     * @var \StructType\Element|null
+     * @var \Oihso\CSESDK\StructType\Element|null
      */
-    protected ?\StructType\Element $Parametrs = null;
+    protected ?\Oihso\CSESDK\StructType\Element $Parametrs = null;
     /**
      * Constructor method for PrintDocument
      * @uses PrintDocument::setType()
@@ -63,9 +63,9 @@ class PrintDocument extends AbstractStructBase
      * @param string $number
      * @param string $login
      * @param string $password
-     * @param \StructType\Element $parametrs
+     * @param \Oihso\CSESDK\StructType\Element $parametrs
      */
-    public function __construct(?string $type = null, ?string $printFormName = null, ?string $number = null, ?string $login = null, ?string $password = null, ?\StructType\Element $parametrs = null)
+    public function __construct(?string $type = null, ?string $printFormName = null, ?string $number = null, ?string $login = null, ?string $password = null, ?\Oihso\CSESDK\StructType\Element $parametrs = null)
     {
         $this
             ->setType($type)
@@ -86,7 +86,7 @@ class PrintDocument extends AbstractStructBase
     /**
      * Set Type value
      * @param string $type
-     * @return \StructType\PrintDocument
+     * @return \Oihso\CSESDK\StructType\PrintDocument
      */
     public function setType(?string $type = null): self
     {
@@ -109,7 +109,7 @@ class PrintDocument extends AbstractStructBase
     /**
      * Set PrintFormName value
      * @param string $printFormName
-     * @return \StructType\PrintDocument
+     * @return \Oihso\CSESDK\StructType\PrintDocument
      */
     public function setPrintFormName(?string $printFormName = null): self
     {
@@ -132,7 +132,7 @@ class PrintDocument extends AbstractStructBase
     /**
      * Set Number value
      * @param string $number
-     * @return \StructType\PrintDocument
+     * @return \Oihso\CSESDK\StructType\PrintDocument
      */
     public function setNumber(?string $number = null): self
     {
@@ -155,7 +155,7 @@ class PrintDocument extends AbstractStructBase
     /**
      * Set Login value
      * @param string $login
-     * @return \StructType\PrintDocument
+     * @return \Oihso\CSESDK\StructType\PrintDocument
      */
     public function setLogin(?string $login = null): self
     {
@@ -178,7 +178,7 @@ class PrintDocument extends AbstractStructBase
     /**
      * Set Password value
      * @param string $password
-     * @return \StructType\PrintDocument
+     * @return \Oihso\CSESDK\StructType\PrintDocument
      */
     public function setPassword(?string $password = null): self
     {
@@ -192,18 +192,18 @@ class PrintDocument extends AbstractStructBase
     }
     /**
      * Get Parametrs value
-     * @return \StructType\Element|null
+     * @return \Oihso\CSESDK\StructType\Element|null
      */
-    public function getParametrs(): ?\StructType\Element
+    public function getParametrs(): ?\Oihso\CSESDK\StructType\Element
     {
         return $this->Parametrs;
     }
     /**
      * Set Parametrs value
-     * @param \StructType\Element $parametrs
-     * @return \StructType\PrintDocument
+     * @param \Oihso\CSESDK\StructType\Element $parametrs
+     * @return \Oihso\CSESDK\StructType\PrintDocument
      */
-    public function setParametrs(?\StructType\Element $parametrs = null): self
+    public function setParametrs(?\Oihso\CSESDK\StructType\Element $parametrs = null): self
     {
         $this->Parametrs = $parametrs;
         

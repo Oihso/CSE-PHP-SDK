@@ -16,9 +16,9 @@ class DeleteDocuments extends AbstractStructBase
 {
     /**
      * The parameters
-     * @var \StructType\Element|null
+     * @var \Oihso\CSESDK\StructType\Element|null
      */
-    protected ?\StructType\Element $parameters = null;
+    protected ?\Oihso\CSESDK\StructType\Element $parameters = null;
     /**
      * The login
      * Meta information extracted from the WSDL
@@ -38,11 +38,11 @@ class DeleteDocuments extends AbstractStructBase
      * @uses DeleteDocuments::setParameters()
      * @uses DeleteDocuments::setLogin()
      * @uses DeleteDocuments::setPassword()
-     * @param \StructType\Element $parameters
+     * @param \Oihso\CSESDK\StructType\Element $parameters
      * @param string $login
      * @param string $password
      */
-    public function __construct(?\StructType\Element $parameters = null, ?string $login = null, ?string $password = null)
+    public function __construct(?\Oihso\CSESDK\StructType\Element $parameters = null, ?string $login = null, ?string $password = null)
     {
         $this
             ->setParameters($parameters)
@@ -51,18 +51,18 @@ class DeleteDocuments extends AbstractStructBase
     }
     /**
      * Get parameters value
-     * @return \StructType\Element|null
+     * @return \Oihso\CSESDK\StructType\Element|null
      */
-    public function getParameters(): ?\StructType\Element
+    public function getParameters(): ?\Oihso\CSESDK\StructType\Element
     {
         return $this->parameters;
     }
     /**
      * Set parameters value
-     * @param \StructType\Element $parameters
-     * @return \StructType\DeleteDocuments
+     * @param \Oihso\CSESDK\StructType\Element $parameters
+     * @return \Oihso\CSESDK\StructType\DeleteDocuments
      */
-    public function setParameters(?\StructType\Element $parameters = null): self
+    public function setParameters(?\Oihso\CSESDK\StructType\Element $parameters = null): self
     {
         $this->parameters = $parameters;
         
@@ -79,7 +79,7 @@ class DeleteDocuments extends AbstractStructBase
     /**
      * Set login value
      * @param string $login
-     * @return \StructType\DeleteDocuments
+     * @return \Oihso\CSESDK\StructType\DeleteDocuments
      */
     public function setLogin(?string $login = null): self
     {
@@ -102,7 +102,7 @@ class DeleteDocuments extends AbstractStructBase
     /**
      * Set password value
      * @param string $password
-     * @return \StructType\DeleteDocuments
+     * @return \Oihso\CSESDK\StructType\DeleteDocuments
      */
     public function setPassword(?string $password = null): self
     {

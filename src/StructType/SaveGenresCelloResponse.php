@@ -40,7 +40,7 @@ class SaveGenresCelloResponse extends AbstractStructBase
     /**
      * Set return value
      * @param bool $return
-     * @return \StructType\SaveGenresCelloResponse
+     * @return \Oihso\CSESDK\StructType\SaveGenresCelloResponse
      */
     public function setReturn(?bool $return = null): self
     {

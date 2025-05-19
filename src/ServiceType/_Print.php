@@ -18,10 +18,10 @@ class _Print extends AbstractSoapClientBase
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \StructType\PrintDocument $parameters
-     * @return \StructType\PrintDocumentResponse|bool
+     * @param \Oihso\CSESDK\StructType\PrintDocument $parameters
+     * @return \Oihso\CSESDK\StructType\PrintDocumentResponse|bool
      */
-    public function PrintDocument(\StructType\PrintDocument $parameters)
+    public function PrintDocument(\Oihso\CSESDK\StructType\PrintDocument $parameters)
     {
         try {
             $this->setResult($resultPrintDocument = $this->getSoapClient()->__soapCall('PrintDocument', [
@@ -38,7 +38,7 @@ class _Print extends AbstractSoapClientBase
     /**
      * Returns the result
      * @see AbstractSoapClientBase::getResult()
-     * @return \StructType\PrintDocumentResponse
+     * @return \Oihso\CSESDK\StructType\PrintDocumentResponse
      */
     public function getResult()
     {

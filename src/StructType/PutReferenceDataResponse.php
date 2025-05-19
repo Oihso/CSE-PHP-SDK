@@ -40,7 +40,7 @@ class PutReferenceDataResponse extends AbstractStructBase
     /**
      * Set return value
      * @param string $return
-     * @return \StructType\PutReferenceDataResponse
+     * @return \Oihso\CSESDK\StructType\PutReferenceDataResponse
      */
     public function setReturn(?string $return = null): self
     {

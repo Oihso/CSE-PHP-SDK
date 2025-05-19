@@ -37,9 +37,9 @@ class Report extends AbstractStructBase
      * The parameters
      * Meta information extracted from the WSDL
      * - nillable: true
-     * @var \StructType\Element|null
+     * @var \Oihso\CSESDK\StructType\Element|null
      */
-    protected ?\StructType\Element $parameters = null;
+    protected ?\Oihso\CSESDK\StructType\Element $parameters = null;
     /**
      * Constructor method for Report
      * @uses Report::setName()
@@ -49,9 +49,9 @@ class Report extends AbstractStructBase
      * @param string $name
      * @param string $login
      * @param string $password
-     * @param \StructType\Element $parameters
+     * @param \Oihso\CSESDK\StructType\Element $parameters
      */
-    public function __construct(?string $name = null, ?string $login = null, ?string $password = null, ?\StructType\Element $parameters = null)
+    public function __construct(?string $name = null, ?string $login = null, ?string $password = null, ?\Oihso\CSESDK\StructType\Element $parameters = null)
     {
         $this
             ->setName($name)
@@ -70,7 +70,7 @@ class Report extends AbstractStructBase
     /**
      * Set name value
      * @param string $name
-     * @return \StructType\Report
+     * @return \Oihso\CSESDK\StructType\Report
      */
     public function setName(?string $name = null): self
     {
@@ -93,7 +93,7 @@ class Report extends AbstractStructBase
     /**
      * Set login value
      * @param string $login
-     * @return \StructType\Report
+     * @return \Oihso\CSESDK\StructType\Report
      */
     public function setLogin(?string $login = null): self
     {
@@ -116,7 +116,7 @@ class Report extends AbstractStructBase
     /**
      * Set password value
      * @param string $password
-     * @return \StructType\Report
+     * @return \Oihso\CSESDK\StructType\Report
      */
     public function setPassword(?string $password = null): self
     {
@@ -130,18 +130,18 @@ class Report extends AbstractStructBase
     }
     /**
      * Get parameters value
-     * @return \StructType\Element|null
+     * @return \Oihso\CSESDK\StructType\Element|null
      */
-    public function getParameters(): ?\StructType\Element
+    public function getParameters(): ?\Oihso\CSESDK\StructType\Element
     {
         return $this->parameters;
     }
     /**
      * Set parameters value
-     * @param \StructType\Element $parameters
-     * @return \StructType\Report
+     * @param \Oihso\CSESDK\StructType\Element $parameters
+     * @return \Oihso\CSESDK\StructType\Report
      */
-    public function setParameters(?\StructType\Element $parameters = null): self
+    public function setParameters(?\Oihso\CSESDK\StructType\Element $parameters = null): self
     {
         $this->parameters = $parameters;
         

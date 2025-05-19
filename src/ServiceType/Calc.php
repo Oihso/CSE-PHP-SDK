@@ -18,10 +18,10 @@ class Calc extends AbstractSoapClientBase
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \StructType\Calc $parameters
-     * @return \StructType\CalcResponse|bool
+     * @param \Oihso\CSESDK\StructType\Calc $parameters
+     * @return \Oihso\CSESDK\StructType\CalcResponse|bool
      */
-    public function Calc(\StructType\Calc $parameters)
+    public function Calc(\Oihso\CSESDK\StructType\Calc $parameters)
     {
         try {
             $this->setResult($resultCalc = $this->getSoapClient()->__soapCall('Calc', [
@@ -38,7 +38,7 @@ class Calc extends AbstractSoapClientBase
     /**
      * Returns the result
      * @see AbstractSoapClientBase::getResult()
-     * @return \StructType\CalcResponse
+     * @return \Oihso\CSESDK\StructType\CalcResponse
      */
     public function getResult()
     {

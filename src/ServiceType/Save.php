@@ -18,10 +18,10 @@ class Save extends AbstractSoapClientBase
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \StructType\SaveDocuments $parameters
-     * @return \StructType\SaveDocumentsResponse|bool
+     * @param \Oihso\CSESDK\StructType\SaveDocuments $parameters
+     * @return \Oihso\CSESDK\StructType\SaveDocumentsResponse|bool
      */
-    public function SaveDocuments(\StructType\SaveDocuments $parameters)
+    public function SaveDocuments(\Oihso\CSESDK\StructType\SaveDocuments $parameters)
     {
         try {
             $this->setResult($resultSaveDocuments = $this->getSoapClient()->__soapCall('SaveDocuments', [
@@ -40,10 +40,10 @@ class Save extends AbstractSoapClientBase
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \StructType\SaveDocumentsCello $parameters
-     * @return \StructType\SaveDocumentsCelloResponse|bool
+     * @param \Oihso\CSESDK\StructType\SaveDocumentsCello $parameters
+     * @return \Oihso\CSESDK\StructType\SaveDocumentsCelloResponse|bool
      */
-    public function SaveDocumentsCello(\StructType\SaveDocumentsCello $parameters)
+    public function SaveDocumentsCello(\Oihso\CSESDK\StructType\SaveDocumentsCello $parameters)
     {
         try {
             $this->setResult($resultSaveDocumentsCello = $this->getSoapClient()->__soapCall('SaveDocumentsCello', [
@@ -62,10 +62,10 @@ class Save extends AbstractSoapClientBase
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \StructType\SaveAckansCello $parameters
-     * @return \StructType\SaveAckansCelloResponse|bool
+     * @param \Oihso\CSESDK\StructType\SaveAckansCello $parameters
+     * @return \Oihso\CSESDK\StructType\SaveAckansCelloResponse|bool
      */
-    public function SaveAckansCello(\StructType\SaveAckansCello $parameters)
+    public function SaveAckansCello(\Oihso\CSESDK\StructType\SaveAckansCello $parameters)
     {
         try {
             $this->setResult($resultSaveAckansCello = $this->getSoapClient()->__soapCall('SaveAckansCello', [
@@ -84,10 +84,10 @@ class Save extends AbstractSoapClientBase
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \StructType\SaveGenresCello $parameters
-     * @return \StructType\SaveGenresCelloResponse|bool
+     * @param \Oihso\CSESDK\StructType\SaveGenresCello $parameters
+     * @return \Oihso\CSESDK\StructType\SaveGenresCelloResponse|bool
      */
-    public function SaveGenresCello(\StructType\SaveGenresCello $parameters)
+    public function SaveGenresCello(\Oihso\CSESDK\StructType\SaveGenresCello $parameters)
     {
         try {
             $this->setResult($resultSaveGenresCello = $this->getSoapClient()->__soapCall('SaveGenresCello', [
@@ -106,10 +106,10 @@ class Save extends AbstractSoapClientBase
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \StructType\SaveWaybillOffice $parameters
-     * @return \StructType\SaveWaybillOfficeResponse|bool
+     * @param \Oihso\CSESDK\StructType\SaveWaybillOffice $parameters
+     * @return \Oihso\CSESDK\StructType\SaveWaybillOfficeResponse|bool
      */
-    public function SaveWaybillOffice(\StructType\SaveWaybillOffice $parameters)
+    public function SaveWaybillOffice(\Oihso\CSESDK\StructType\SaveWaybillOffice $parameters)
     {
         try {
             $this->setResult($resultSaveWaybillOffice = $this->getSoapClient()->__soapCall('SaveWaybillOffice', [
@@ -128,10 +128,10 @@ class Save extends AbstractSoapClientBase
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \StructType\SaveOwnerOfTheGoods $parameters
-     * @return \StructType\SaveOwnerOfTheGoodsResponse|bool
+     * @param \Oihso\CSESDK\StructType\SaveOwnerOfTheGoods $parameters
+     * @return \Oihso\CSESDK\StructType\SaveOwnerOfTheGoodsResponse|bool
      */
-    public function SaveOwnerOfTheGoods(\StructType\SaveOwnerOfTheGoods $parameters)
+    public function SaveOwnerOfTheGoods(\Oihso\CSESDK\StructType\SaveOwnerOfTheGoods $parameters)
     {
         try {
             $this->setResult($resultSaveOwnerOfTheGoods = $this->getSoapClient()->__soapCall('SaveOwnerOfTheGoods', [
@@ -148,7 +148,7 @@ class Save extends AbstractSoapClientBase
     /**
      * Returns the result
      * @see AbstractSoapClientBase::getResult()
-     * @return \StructType\SaveAckansCelloResponse|\StructType\SaveDocumentsCelloResponse|\StructType\SaveDocumentsResponse|\StructType\SaveGenresCelloResponse|\StructType\SaveOwnerOfTheGoodsResponse|\StructType\SaveWaybillOfficeResponse
+     * @return \Oihso\CSESDK\StructType\SaveAckansCelloResponse|\Oihso\CSESDK\StructType\SaveDocumentsCelloResponse|\Oihso\CSESDK\StructType\SaveDocumentsResponse|\Oihso\CSESDK\StructType\SaveGenresCelloResponse|\Oihso\CSESDK\StructType\SaveOwnerOfTheGoodsResponse|\Oihso\CSESDK\StructType\SaveWaybillOfficeResponse
      */
     public function getResult()
     {

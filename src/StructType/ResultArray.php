@@ -25,7 +25,7 @@ class ResultArray extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - nillable: true
-     * @var \StructType\ResultString[]
+     * @var \Oihso\CSESDK\StructType\ResultString[]
      */
     protected ?array $Items = null;
     /**
@@ -42,7 +42,7 @@ class ResultArray extends AbstractStructBase
      * @uses ResultArray::setItems()
      * @uses ResultArray::setErrorInfo()
      * @param bool $error
-     * @param \StructType\ResultString[] $items
+     * @param \Oihso\CSESDK\StructType\ResultString[] $items
      * @param string $errorInfo
      */
     public function __construct(?bool $error = null, ?array $items = null, ?string $errorInfo = null)
@@ -63,7 +63,7 @@ class ResultArray extends AbstractStructBase
     /**
      * Set Error value
      * @param bool $error
-     * @return \StructType\ResultArray
+     * @return \Oihso\CSESDK\StructType\ResultArray
      */
     public function setError(?bool $error = null): self
     {
@@ -80,7 +80,7 @@ class ResultArray extends AbstractStructBase
      * An additional test has been added (isset) before returning the property value as
      * this property may have been unset before, due to the fact that this property is
      * removable from the request (nillable=true+minOccurs=0)
-     * @return \StructType\ResultString[]
+     * @return \Oihso\CSESDK\StructType\ResultString[]
      */
     public function getItems(): ?array
     {
@@ -102,12 +102,12 @@ class ResultArray extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $resultArrayItemsItem) {
             // validation for constraint: itemType
-            if (!$resultArrayItemsItem instanceof \StructType\ResultString) {
+            if (!$resultArrayItemsItem instanceof \Oihso\CSESDK\StructType\ResultString) {
                 $invalidValues[] = is_object($resultArrayItemsItem) ? get_class($resultArrayItemsItem) : sprintf('%s(%s)', gettype($resultArrayItemsItem), var_export($resultArrayItemsItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The Items property can only contain items of type \StructType\ResultString, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The Items property can only contain items of type \Oihso\CSESDK\StructType\ResultString, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -118,8 +118,8 @@ class ResultArray extends AbstractStructBase
      * This property is removable from request (nillable=true+minOccurs=0), therefore
      * if the value assigned to this property is null, it is removed from this object
      * @throws InvalidArgumentException
-     * @param \StructType\ResultString[] $items
-     * @return \StructType\ResultArray
+     * @param \Oihso\CSESDK\StructType\ResultString[] $items
+     * @return \Oihso\CSESDK\StructType\ResultArray
      */
     public function setItems(?array $items = null): self
     {
@@ -138,14 +138,14 @@ class ResultArray extends AbstractStructBase
     /**
      * Add item to Items value
      * @throws InvalidArgumentException
-     * @param \StructType\ResultString $item
-     * @return \StructType\ResultArray
+     * @param \Oihso\CSESDK\StructType\ResultString $item
+     * @return \Oihso\CSESDK\StructType\ResultArray
      */
-    public function addToItems(\StructType\ResultString $item): self
+    public function addToItems(\Oihso\CSESDK\StructType\ResultString $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\ResultString) {
-            throw new InvalidArgumentException(sprintf('The Items property can only contain items of type \StructType\ResultString, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Oihso\CSESDK\StructType\ResultString) {
+            throw new InvalidArgumentException(sprintf('The Items property can only contain items of type \Oihso\CSESDK\StructType\ResultString, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->Items[] = $item;
         
@@ -167,7 +167,7 @@ class ResultArray extends AbstractStructBase
      * This property is removable from request (nillable=true+minOccurs=0), therefore
      * if the value assigned to this property is null, it is removed from this object
      * @param string $errorInfo
-     * @return \StructType\ResultArray
+     * @return \Oihso\CSESDK\StructType\ResultArray
      */
     public function setErrorInfo(?string $errorInfo = null): self
     {

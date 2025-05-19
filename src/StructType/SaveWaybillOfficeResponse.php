@@ -16,33 +16,33 @@ class SaveWaybillOfficeResponse extends AbstractStructBase
 {
     /**
      * The return
-     * @var \StructType\ResultArray|null
+     * @var \Oihso\CSESDK\StructType\ResultArray|null
      */
-    protected ?\StructType\ResultArray $return = null;
+    protected ?\Oihso\CSESDK\StructType\ResultArray $return = null;
     /**
      * Constructor method for SaveWaybillOfficeResponse
      * @uses SaveWaybillOfficeResponse::setReturn()
-     * @param \StructType\ResultArray $return
+     * @param \Oihso\CSESDK\StructType\ResultArray $return
      */
-    public function __construct(?\StructType\ResultArray $return = null)
+    public function __construct(?\Oihso\CSESDK\StructType\ResultArray $return = null)
     {
         $this
             ->setReturn($return);
     }
     /**
      * Get return value
-     * @return \StructType\ResultArray|null
+     * @return \Oihso\CSESDK\StructType\ResultArray|null
      */
-    public function getReturn(): ?\StructType\ResultArray
+    public function getReturn(): ?\Oihso\CSESDK\StructType\ResultArray
     {
         return $this->return;
     }
     /**
      * Set return value
-     * @param \StructType\ResultArray $return
-     * @return \StructType\SaveWaybillOfficeResponse
+     * @param \Oihso\CSESDK\StructType\ResultArray $return
+     * @return \Oihso\CSESDK\StructType\SaveWaybillOfficeResponse
      */
-    public function setReturn(?\StructType\ResultArray $return = null): self
+    public function setReturn(?\Oihso\CSESDK\StructType\ResultArray $return = null): self
     {
         $this->return = $return;
         

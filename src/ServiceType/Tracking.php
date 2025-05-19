@@ -18,10 +18,10 @@ class Tracking extends AbstractSoapClientBase
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \StructType\Tracking $parameters
-     * @return \StructType\TrackingResponse|bool
+     * @param \Oihso\CSESDK\StructType\Tracking $parameters
+     * @return \Oihso\CSESDK\StructType\TrackingResponse|bool
      */
-    public function Tracking(\StructType\Tracking $parameters)
+    public function Tracking(\Oihso\CSESDK\StructType\Tracking $parameters)
     {
         try {
             $this->setResult($resultTracking = $this->getSoapClient()->__soapCall('Tracking', [
@@ -38,7 +38,7 @@ class Tracking extends AbstractSoapClientBase
     /**
      * Returns the result
      * @see AbstractSoapClientBase::getResult()
-     * @return \StructType\TrackingResponse
+     * @return \Oihso\CSESDK\StructType\TrackingResponse
      */
     public function getResult()
     {

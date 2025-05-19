@@ -40,7 +40,7 @@ class SaveAckansCelloResponse extends AbstractStructBase
     /**
      * Set return value
      * @param bool $return
-     * @return \StructType\SaveAckansCelloResponse
+     * @return \Oihso\CSESDK\StructType\SaveAckansCelloResponse
      */
     public function setReturn(?bool $return = null): self
     {

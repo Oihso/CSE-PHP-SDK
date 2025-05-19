@@ -70,7 +70,7 @@ class Materials extends AbstractStructBase
      * This property is removable from request (nillable=true+minOccurs=0), therefore
      * if the value assigned to this property is null, it is removed from this object
      * @param string $name
-     * @return \StructType\Materials
+     * @return \Oihso\CSESDK\StructType\Materials
      */
     public function setName(?string $name = null): self
     {
@@ -102,7 +102,7 @@ class Materials extends AbstractStructBase
      * This property is removable from request (nillable=true+minOccurs=0), therefore
      * if the value assigned to this property is null, it is removed from this object
      * @param float $price
-     * @return \StructType\Materials
+     * @return \Oihso\CSESDK\StructType\Materials
      */
     public function setPrice(?float $price = null): self
     {
@@ -134,7 +134,7 @@ class Materials extends AbstractStructBase
      * This property is removable from request (nillable=true+minOccurs=0), therefore
      * if the value assigned to this property is null, it is removed from this object
      * @param int $qty
-     * @return \StructType\Materials
+     * @return \Oihso\CSESDK\StructType\Materials
      */
     public function setQty(?int $qty = null): self
     {

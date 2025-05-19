@@ -116,7 +116,7 @@ class Order extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - nillable: true
-     * @var \StructType\DestinationInformation[]
+     * @var \Oihso\CSESDK\StructType\DestinationInformation[]
      */
     protected ?array $Recipient = null;
     /**
@@ -140,9 +140,9 @@ class Order extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - minOccurs: 0
      * - nillable: true
-     * @var \StructType\DestinationInformation|null
+     * @var \Oihso\CSESDK\StructType\DestinationInformation|null
      */
-    protected ?\StructType\DestinationInformation $Sender = null;
+    protected ?\Oihso\CSESDK\StructType\DestinationInformation $Sender = null;
     /**
      * The TakeDate
      * Meta information extracted from the WSDL
@@ -325,7 +325,7 @@ class Order extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - nillable: true
-     * @var \StructType\Notifications[]
+     * @var \Oihso\CSESDK\StructType\Notifications[]
      */
     protected ?array $Notifications = null;
     /**
@@ -366,7 +366,7 @@ class Order extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - nillable: true
-     * @var \StructType\DocumentsPhoto[]
+     * @var \Oihso\CSESDK\StructType\DocumentsPhoto[]
      */
     protected ?array $ArrayOfDocumentsPhoto = null;
     /**
@@ -383,7 +383,7 @@ class Order extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - nillable: true
-     * @var \StructType\ListOfCorrespondences[]
+     * @var \Oihso\CSESDK\StructType\ListOfCorrespondences[]
      */
     protected ?array $ClientCodes = null;
     /**
@@ -400,7 +400,7 @@ class Order extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - nillable: true
-     * @var \StructType\ListOfCorrespondences[]
+     * @var \Oihso\CSESDK\StructType\ListOfCorrespondences[]
      */
     protected ?array $Services = null;
     /**
@@ -409,7 +409,7 @@ class Order extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - nillable: true
-     * @var \StructType\ListOfCorrespondences[]
+     * @var \Oihso\CSESDK\StructType\ListOfCorrespondences[]
      */
     protected ?array $AdditionalServices = null;
     /**
@@ -475,10 +475,10 @@ class Order extends AbstractStructBase
      * @param string $office
      * @param string $official
      * @param string $project
-     * @param \StructType\DestinationInformation[] $recipient
+     * @param \Oihso\CSESDK\StructType\DestinationInformation[] $recipient
      * @param string $replyEMail
      * @param string $replySMSPhone
-     * @param \StructType\DestinationInformation $sender
+     * @param \Oihso\CSESDK\StructType\DestinationInformation $sender
      * @param string $takeDate
      * @param string $takeTime
      * @param string $typeOfCargo
@@ -501,19 +501,19 @@ class Order extends AbstractStructBase
      * @param bool $withSignature
      * @param string $typeOfOrder
      * @param bool $distribution
-     * @param \StructType\Notifications[] $notifications
+     * @param \Oihso\CSESDK\StructType\Notifications[] $notifications
      * @param bool $callCourer
      * @param string $typeOfParentForWaybill
      * @param string $parentOrderForWaybill
      * @param string $clientNumber
-     * @param \StructType\DocumentsPhoto[] $arrayOfDocumentsPhoto
+     * @param \Oihso\CSESDK\StructType\DocumentsPhoto[] $arrayOfDocumentsPhoto
      * @param string $repository
-     * @param \StructType\ListOfCorrespondences[] $clientCodes
+     * @param \Oihso\CSESDK\StructType\ListOfCorrespondences[] $clientCodes
      * @param string $deliveryDateOf
-     * @param \StructType\ListOfCorrespondences[] $services
-     * @param \StructType\ListOfCorrespondences[] $additionalServices
+     * @param \Oihso\CSESDK\StructType\ListOfCorrespondences[] $services
+     * @param \Oihso\CSESDK\StructType\ListOfCorrespondences[] $additionalServices
      */
-    public function __construct(?string $client = null, ?string $clientContact = null, ?string $contract = null, ?string $createDate = null, ?string $deliveryDate = null, ?string $deliveryMethod = null, ?string $deliveryTime = null, ?string $department = null, ?string $descriptionForTheVPDReturn = null, ?string $office = null, ?string $official = null, ?string $project = null, ?array $recipient = null, ?string $replyEMail = null, ?string $replySMSPhone = null, ?\StructType\DestinationInformation $sender = null, ?string $takeDate = null, ?string $takeTime = null, ?string $typeOfCargo = null, ?string $typeOfPayer = null, ?string $urgency = null, ?string $wayOfPayment = null, ?bool $withReturn = null, ?string $autoType = null, ?string $autoModel = null, ?int $senderPowerOfAttorney = null, ?int $recipientPowerOfAttorney = null, ?int $orderForAutoReservation = null, ?string $comment = null, ?bool $storeDoor = null, ?string $deliveryOfCargo = null, ?bool $insurance = null, ?bool $declared = null, ?bool $personallyInHand = null, ?bool $lUW = null, ?bool $withSignature = null, ?string $typeOfOrder = null, ?bool $distribution = null, ?array $notifications = null, ?bool $callCourer = null, ?string $typeOfParentForWaybill = null, ?string $parentOrderForWaybill = null, ?string $clientNumber = null, ?array $arrayOfDocumentsPhoto = null, ?string $repository = null, ?array $clientCodes = null, ?string $deliveryDateOf = null, ?array $services = null, ?array $additionalServices = null)
+    public function __construct(?string $client = null, ?string $clientContact = null, ?string $contract = null, ?string $createDate = null, ?string $deliveryDate = null, ?string $deliveryMethod = null, ?string $deliveryTime = null, ?string $department = null, ?string $descriptionForTheVPDReturn = null, ?string $office = null, ?string $official = null, ?string $project = null, ?array $recipient = null, ?string $replyEMail = null, ?string $replySMSPhone = null, ?\Oihso\CSESDK\StructType\DestinationInformation $sender = null, ?string $takeDate = null, ?string $takeTime = null, ?string $typeOfCargo = null, ?string $typeOfPayer = null, ?string $urgency = null, ?string $wayOfPayment = null, ?bool $withReturn = null, ?string $autoType = null, ?string $autoModel = null, ?int $senderPowerOfAttorney = null, ?int $recipientPowerOfAttorney = null, ?int $orderForAutoReservation = null, ?string $comment = null, ?bool $storeDoor = null, ?string $deliveryOfCargo = null, ?bool $insurance = null, ?bool $declared = null, ?bool $personallyInHand = null, ?bool $lUW = null, ?bool $withSignature = null, ?string $typeOfOrder = null, ?bool $distribution = null, ?array $notifications = null, ?bool $callCourer = null, ?string $typeOfParentForWaybill = null, ?string $parentOrderForWaybill = null, ?string $clientNumber = null, ?array $arrayOfDocumentsPhoto = null, ?string $repository = null, ?array $clientCodes = null, ?string $deliveryDateOf = null, ?array $services = null, ?array $additionalServices = null)
     {
         $this
             ->setClient($client)
@@ -582,7 +582,7 @@ class Order extends AbstractStructBase
      * This property is removable from request (nillable=true+minOccurs=0), therefore
      * if the value assigned to this property is null, it is removed from this object
      * @param string $client
-     * @return \StructType\Order
+     * @return \Oihso\CSESDK\StructType\Order
      */
     public function setClient(?string $client = null): self
     {
@@ -614,7 +614,7 @@ class Order extends AbstractStructBase
      * This property is removable from request (nillable=true+minOccurs=0), therefore
      * if the value assigned to this property is null, it is removed from this object
      * @param string $clientContact
-     * @return \StructType\Order
+     * @return \Oihso\CSESDK\StructType\Order
      */
     public function setClientContact(?string $clientContact = null): self
     {
@@ -646,7 +646,7 @@ class Order extends AbstractStructBase
      * This property is removable from request (nillable=true+minOccurs=0), therefore
      * if the value assigned to this property is null, it is removed from this object
      * @param string $contract
-     * @return \StructType\Order
+     * @return \Oihso\CSESDK\StructType\Order
      */
     public function setContract(?string $contract = null): self
     {
@@ -678,7 +678,7 @@ class Order extends AbstractStructBase
      * This property is removable from request (nillable=true+minOccurs=0), therefore
      * if the value assigned to this property is null, it is removed from this object
      * @param string $createDate
-     * @return \StructType\Order
+     * @return \Oihso\CSESDK\StructType\Order
      */
     public function setCreateDate(?string $createDate = null): self
     {
@@ -710,7 +710,7 @@ class Order extends AbstractStructBase
      * This property is removable from request (nillable=true+minOccurs=0), therefore
      * if the value assigned to this property is null, it is removed from this object
      * @param string $deliveryDate
-     * @return \StructType\Order
+     * @return \Oihso\CSESDK\StructType\Order
      */
     public function setDeliveryDate(?string $deliveryDate = null): self
     {
@@ -742,7 +742,7 @@ class Order extends AbstractStructBase
      * This property is removable from request (nillable=true+minOccurs=0), therefore
      * if the value assigned to this property is null, it is removed from this object
      * @param string $deliveryMethod
-     * @return \StructType\Order
+     * @return \Oihso\CSESDK\StructType\Order
      */
     public function setDeliveryMethod(?string $deliveryMethod = null): self
     {
@@ -774,7 +774,7 @@ class Order extends AbstractStructBase
      * This property is removable from request (nillable=true+minOccurs=0), therefore
      * if the value assigned to this property is null, it is removed from this object
      * @param string $deliveryTime
-     * @return \StructType\Order
+     * @return \Oihso\CSESDK\StructType\Order
      */
     public function setDeliveryTime(?string $deliveryTime = null): self
     {
@@ -806,7 +806,7 @@ class Order extends AbstractStructBase
      * This property is removable from request (nillable=true+minOccurs=0), therefore
      * if the value assigned to this property is null, it is removed from this object
      * @param string $department
-     * @return \StructType\Order
+     * @return \Oihso\CSESDK\StructType\Order
      */
     public function setDepartment(?string $department = null): self
     {
@@ -838,7 +838,7 @@ class Order extends AbstractStructBase
      * This property is removable from request (nillable=true+minOccurs=0), therefore
      * if the value assigned to this property is null, it is removed from this object
      * @param string $descriptionForTheVPDReturn
-     * @return \StructType\Order
+     * @return \Oihso\CSESDK\StructType\Order
      */
     public function setDescriptionForTheVPDReturn(?string $descriptionForTheVPDReturn = null): self
     {
@@ -870,7 +870,7 @@ class Order extends AbstractStructBase
      * This property is removable from request (nillable=true+minOccurs=0), therefore
      * if the value assigned to this property is null, it is removed from this object
      * @param string $office
-     * @return \StructType\Order
+     * @return \Oihso\CSESDK\StructType\Order
      */
     public function setOffice(?string $office = null): self
     {
@@ -902,7 +902,7 @@ class Order extends AbstractStructBase
      * This property is removable from request (nillable=true+minOccurs=0), therefore
      * if the value assigned to this property is null, it is removed from this object
      * @param string $official
-     * @return \StructType\Order
+     * @return \Oihso\CSESDK\StructType\Order
      */
     public function setOfficial(?string $official = null): self
     {
@@ -934,7 +934,7 @@ class Order extends AbstractStructBase
      * This property is removable from request (nillable=true+minOccurs=0), therefore
      * if the value assigned to this property is null, it is removed from this object
      * @param string $project
-     * @return \StructType\Order
+     * @return \Oihso\CSESDK\StructType\Order
      */
     public function setProject(?string $project = null): self
     {
@@ -955,7 +955,7 @@ class Order extends AbstractStructBase
      * An additional test has been added (isset) before returning the property value as
      * this property may have been unset before, due to the fact that this property is
      * removable from the request (nillable=true+minOccurs=0)
-     * @return \StructType\DestinationInformation[]
+     * @return \Oihso\CSESDK\StructType\DestinationInformation[]
      */
     public function getRecipient(): ?array
     {
@@ -977,12 +977,12 @@ class Order extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $orderRecipientItem) {
             // validation for constraint: itemType
-            if (!$orderRecipientItem instanceof \StructType\DestinationInformation) {
+            if (!$orderRecipientItem instanceof \Oihso\CSESDK\StructType\DestinationInformation) {
                 $invalidValues[] = is_object($orderRecipientItem) ? get_class($orderRecipientItem) : sprintf('%s(%s)', gettype($orderRecipientItem), var_export($orderRecipientItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The Recipient property can only contain items of type \StructType\DestinationInformation, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The Recipient property can only contain items of type \Oihso\CSESDK\StructType\DestinationInformation, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -993,8 +993,8 @@ class Order extends AbstractStructBase
      * This property is removable from request (nillable=true+minOccurs=0), therefore
      * if the value assigned to this property is null, it is removed from this object
      * @throws InvalidArgumentException
-     * @param \StructType\DestinationInformation[] $recipient
-     * @return \StructType\Order
+     * @param \Oihso\CSESDK\StructType\DestinationInformation[] $recipient
+     * @return \Oihso\CSESDK\StructType\Order
      */
     public function setRecipient(?array $recipient = null): self
     {
@@ -1013,14 +1013,14 @@ class Order extends AbstractStructBase
     /**
      * Add item to Recipient value
      * @throws InvalidArgumentException
-     * @param \StructType\DestinationInformation $item
-     * @return \StructType\Order
+     * @param \Oihso\CSESDK\StructType\DestinationInformation $item
+     * @return \Oihso\CSESDK\StructType\Order
      */
-    public function addToRecipient(\StructType\DestinationInformation $item): self
+    public function addToRecipient(\Oihso\CSESDK\StructType\DestinationInformation $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\DestinationInformation) {
-            throw new InvalidArgumentException(sprintf('The Recipient property can only contain items of type \StructType\DestinationInformation, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Oihso\CSESDK\StructType\DestinationInformation) {
+            throw new InvalidArgumentException(sprintf('The Recipient property can only contain items of type \Oihso\CSESDK\StructType\DestinationInformation, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->Recipient[] = $item;
         
@@ -1042,7 +1042,7 @@ class Order extends AbstractStructBase
      * This property is removable from request (nillable=true+minOccurs=0), therefore
      * if the value assigned to this property is null, it is removed from this object
      * @param string $replyEMail
-     * @return \StructType\Order
+     * @return \Oihso\CSESDK\StructType\Order
      */
     public function setReplyEMail(?string $replyEMail = null): self
     {
@@ -1074,7 +1074,7 @@ class Order extends AbstractStructBase
      * This property is removable from request (nillable=true+minOccurs=0), therefore
      * if the value assigned to this property is null, it is removed from this object
      * @param string $replySMSPhone
-     * @return \StructType\Order
+     * @return \Oihso\CSESDK\StructType\Order
      */
     public function setReplySMSPhone(?string $replySMSPhone = null): self
     {
@@ -1095,9 +1095,9 @@ class Order extends AbstractStructBase
      * An additional test has been added (isset) before returning the property value as
      * this property may have been unset before, due to the fact that this property is
      * removable from the request (nillable=true+minOccurs=0)
-     * @return \StructType\DestinationInformation|null
+     * @return \Oihso\CSESDK\StructType\DestinationInformation|null
      */
-    public function getSender(): ?\StructType\DestinationInformation
+    public function getSender(): ?\Oihso\CSESDK\StructType\DestinationInformation
     {
         return $this->Sender ?? null;
     }
@@ -1105,10 +1105,10 @@ class Order extends AbstractStructBase
      * Set Sender value
      * This property is removable from request (nillable=true+minOccurs=0), therefore
      * if the value assigned to this property is null, it is removed from this object
-     * @param \StructType\DestinationInformation $sender
-     * @return \StructType\Order
+     * @param \Oihso\CSESDK\StructType\DestinationInformation $sender
+     * @return \Oihso\CSESDK\StructType\Order
      */
-    public function setSender(?\StructType\DestinationInformation $sender = null): self
+    public function setSender(?\Oihso\CSESDK\StructType\DestinationInformation $sender = null): self
     {
         if (is_null($sender) || (is_array($sender) && empty($sender))) {
             unset($this->Sender);
@@ -1134,7 +1134,7 @@ class Order extends AbstractStructBase
      * This property is removable from request (nillable=true+minOccurs=0), therefore
      * if the value assigned to this property is null, it is removed from this object
      * @param string $takeDate
-     * @return \StructType\Order
+     * @return \Oihso\CSESDK\StructType\Order
      */
     public function setTakeDate(?string $takeDate = null): self
     {
@@ -1166,7 +1166,7 @@ class Order extends AbstractStructBase
      * This property is removable from request (nillable=true+minOccurs=0), therefore
      * if the value assigned to this property is null, it is removed from this object
      * @param string $takeTime
-     * @return \StructType\Order
+     * @return \Oihso\CSESDK\StructType\Order
      */
     public function setTakeTime(?string $takeTime = null): self
     {
@@ -1198,7 +1198,7 @@ class Order extends AbstractStructBase
      * This property is removable from request (nillable=true+minOccurs=0), therefore
      * if the value assigned to this property is null, it is removed from this object
      * @param string $typeOfCargo
-     * @return \StructType\Order
+     * @return \Oihso\CSESDK\StructType\Order
      */
     public function setTypeOfCargo(?string $typeOfCargo = null): self
     {
@@ -1230,7 +1230,7 @@ class Order extends AbstractStructBase
      * This property is removable from request (nillable=true+minOccurs=0), therefore
      * if the value assigned to this property is null, it is removed from this object
      * @param string $typeOfPayer
-     * @return \StructType\Order
+     * @return \Oihso\CSESDK\StructType\Order
      */
     public function setTypeOfPayer(?string $typeOfPayer = null): self
     {
@@ -1262,7 +1262,7 @@ class Order extends AbstractStructBase
      * This property is removable from request (nillable=true+minOccurs=0), therefore
      * if the value assigned to this property is null, it is removed from this object
      * @param string $urgency
-     * @return \StructType\Order
+     * @return \Oihso\CSESDK\StructType\Order
      */
     public function setUrgency(?string $urgency = null): self
     {
@@ -1294,7 +1294,7 @@ class Order extends AbstractStructBase
      * This property is removable from request (nillable=true+minOccurs=0), therefore
      * if the value assigned to this property is null, it is removed from this object
      * @param string $wayOfPayment
-     * @return \StructType\Order
+     * @return \Oihso\CSESDK\StructType\Order
      */
     public function setWayOfPayment(?string $wayOfPayment = null): self
     {
@@ -1326,7 +1326,7 @@ class Order extends AbstractStructBase
      * This property is removable from request (nillable=true+minOccurs=0), therefore
      * if the value assigned to this property is null, it is removed from this object
      * @param bool $withReturn
-     * @return \StructType\Order
+     * @return \Oihso\CSESDK\StructType\Order
      */
     public function setWithReturn(?bool $withReturn = null): self
     {
@@ -1358,7 +1358,7 @@ class Order extends AbstractStructBase
      * This property is removable from request (nillable=true+minOccurs=0), therefore
      * if the value assigned to this property is null, it is removed from this object
      * @param string $autoType
-     * @return \StructType\Order
+     * @return \Oihso\CSESDK\StructType\Order
      */
     public function setAutoType(?string $autoType = null): self
     {
@@ -1390,7 +1390,7 @@ class Order extends AbstractStructBase
      * This property is removable from request (nillable=true+minOccurs=0), therefore
      * if the value assigned to this property is null, it is removed from this object
      * @param string $autoModel
-     * @return \StructType\Order
+     * @return \Oihso\CSESDK\StructType\Order
      */
     public function setAutoModel(?string $autoModel = null): self
     {
@@ -1422,7 +1422,7 @@ class Order extends AbstractStructBase
      * This property is removable from request (nillable=true+minOccurs=0), therefore
      * if the value assigned to this property is null, it is removed from this object
      * @param int $senderPowerOfAttorney
-     * @return \StructType\Order
+     * @return \Oihso\CSESDK\StructType\Order
      */
     public function setSenderPowerOfAttorney(?int $senderPowerOfAttorney = null): self
     {
@@ -1454,7 +1454,7 @@ class Order extends AbstractStructBase
      * This property is removable from request (nillable=true+minOccurs=0), therefore
      * if the value assigned to this property is null, it is removed from this object
      * @param int $recipientPowerOfAttorney
-     * @return \StructType\Order
+     * @return \Oihso\CSESDK\StructType\Order
      */
     public function setRecipientPowerOfAttorney(?int $recipientPowerOfAttorney = null): self
     {
@@ -1486,7 +1486,7 @@ class Order extends AbstractStructBase
      * This property is removable from request (nillable=true+minOccurs=0), therefore
      * if the value assigned to this property is null, it is removed from this object
      * @param int $orderForAutoReservation
-     * @return \StructType\Order
+     * @return \Oihso\CSESDK\StructType\Order
      */
     public function setOrderForAutoReservation(?int $orderForAutoReservation = null): self
     {
@@ -1518,7 +1518,7 @@ class Order extends AbstractStructBase
      * This property is removable from request (nillable=true+minOccurs=0), therefore
      * if the value assigned to this property is null, it is removed from this object
      * @param string $comment
-     * @return \StructType\Order
+     * @return \Oihso\CSESDK\StructType\Order
      */
     public function setComment(?string $comment = null): self
     {
@@ -1550,7 +1550,7 @@ class Order extends AbstractStructBase
      * This property is removable from request (nillable=true+minOccurs=0), therefore
      * if the value assigned to this property is null, it is removed from this object
      * @param bool $storeDoor
-     * @return \StructType\Order
+     * @return \Oihso\CSESDK\StructType\Order
      */
     public function setStoreDoor(?bool $storeDoor = null): self
     {
@@ -1582,7 +1582,7 @@ class Order extends AbstractStructBase
      * This property is removable from request (nillable=true+minOccurs=0), therefore
      * if the value assigned to this property is null, it is removed from this object
      * @param string $deliveryOfCargo
-     * @return \StructType\Order
+     * @return \Oihso\CSESDK\StructType\Order
      */
     public function setDeliveryOfCargo(?string $deliveryOfCargo = null): self
     {
@@ -1614,7 +1614,7 @@ class Order extends AbstractStructBase
      * This property is removable from request (nillable=true+minOccurs=0), therefore
      * if the value assigned to this property is null, it is removed from this object
      * @param bool $insurance
-     * @return \StructType\Order
+     * @return \Oihso\CSESDK\StructType\Order
      */
     public function setInsurance(?bool $insurance = null): self
     {
@@ -1646,7 +1646,7 @@ class Order extends AbstractStructBase
      * This property is removable from request (nillable=true+minOccurs=0), therefore
      * if the value assigned to this property is null, it is removed from this object
      * @param bool $declared
-     * @return \StructType\Order
+     * @return \Oihso\CSESDK\StructType\Order
      */
     public function setDeclared(?bool $declared = null): self
     {
@@ -1678,7 +1678,7 @@ class Order extends AbstractStructBase
      * This property is removable from request (nillable=true+minOccurs=0), therefore
      * if the value assigned to this property is null, it is removed from this object
      * @param bool $personallyInHand
-     * @return \StructType\Order
+     * @return \Oihso\CSESDK\StructType\Order
      */
     public function setPersonallyInHand(?bool $personallyInHand = null): self
     {
@@ -1710,7 +1710,7 @@ class Order extends AbstractStructBase
      * This property is removable from request (nillable=true+minOccurs=0), therefore
      * if the value assigned to this property is null, it is removed from this object
      * @param bool $lUW
-     * @return \StructType\Order
+     * @return \Oihso\CSESDK\StructType\Order
      */
     public function setLUW(?bool $lUW = null): self
     {
@@ -1742,7 +1742,7 @@ class Order extends AbstractStructBase
      * This property is removable from request (nillable=true+minOccurs=0), therefore
      * if the value assigned to this property is null, it is removed from this object
      * @param bool $withSignature
-     * @return \StructType\Order
+     * @return \Oihso\CSESDK\StructType\Order
      */
     public function setWithSignature(?bool $withSignature = null): self
     {
@@ -1774,7 +1774,7 @@ class Order extends AbstractStructBase
      * This property is removable from request (nillable=true+minOccurs=0), therefore
      * if the value assigned to this property is null, it is removed from this object
      * @param string $typeOfOrder
-     * @return \StructType\Order
+     * @return \Oihso\CSESDK\StructType\Order
      */
     public function setTypeOfOrder(?string $typeOfOrder = null): self
     {
@@ -1806,7 +1806,7 @@ class Order extends AbstractStructBase
      * This property is removable from request (nillable=true+minOccurs=0), therefore
      * if the value assigned to this property is null, it is removed from this object
      * @param bool $distribution
-     * @return \StructType\Order
+     * @return \Oihso\CSESDK\StructType\Order
      */
     public function setDistribution(?bool $distribution = null): self
     {
@@ -1827,7 +1827,7 @@ class Order extends AbstractStructBase
      * An additional test has been added (isset) before returning the property value as
      * this property may have been unset before, due to the fact that this property is
      * removable from the request (nillable=true+minOccurs=0)
-     * @return \StructType\Notifications[]
+     * @return \Oihso\CSESDK\StructType\Notifications[]
      */
     public function getNotifications(): ?array
     {
@@ -1849,12 +1849,12 @@ class Order extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $orderNotificationsItem) {
             // validation for constraint: itemType
-            if (!$orderNotificationsItem instanceof \StructType\Notifications) {
+            if (!$orderNotificationsItem instanceof \Oihso\CSESDK\StructType\Notifications) {
                 $invalidValues[] = is_object($orderNotificationsItem) ? get_class($orderNotificationsItem) : sprintf('%s(%s)', gettype($orderNotificationsItem), var_export($orderNotificationsItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The Notifications property can only contain items of type \StructType\Notifications, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The Notifications property can only contain items of type \Oihso\CSESDK\StructType\Notifications, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -1865,8 +1865,8 @@ class Order extends AbstractStructBase
      * This property is removable from request (nillable=true+minOccurs=0), therefore
      * if the value assigned to this property is null, it is removed from this object
      * @throws InvalidArgumentException
-     * @param \StructType\Notifications[] $notifications
-     * @return \StructType\Order
+     * @param \Oihso\CSESDK\StructType\Notifications[] $notifications
+     * @return \Oihso\CSESDK\StructType\Order
      */
     public function setNotifications(?array $notifications = null): self
     {
@@ -1885,14 +1885,14 @@ class Order extends AbstractStructBase
     /**
      * Add item to Notifications value
      * @throws InvalidArgumentException
-     * @param \StructType\Notifications $item
-     * @return \StructType\Order
+     * @param \Oihso\CSESDK\StructType\Notifications $item
+     * @return \Oihso\CSESDK\StructType\Order
      */
-    public function addToNotifications(\StructType\Notifications $item): self
+    public function addToNotifications(\Oihso\CSESDK\StructType\Notifications $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Notifications) {
-            throw new InvalidArgumentException(sprintf('The Notifications property can only contain items of type \StructType\Notifications, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Oihso\CSESDK\StructType\Notifications) {
+            throw new InvalidArgumentException(sprintf('The Notifications property can only contain items of type \Oihso\CSESDK\StructType\Notifications, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->Notifications[] = $item;
         
@@ -1914,7 +1914,7 @@ class Order extends AbstractStructBase
      * This property is removable from request (nillable=true+minOccurs=0), therefore
      * if the value assigned to this property is null, it is removed from this object
      * @param bool $callCourer
-     * @return \StructType\Order
+     * @return \Oihso\CSESDK\StructType\Order
      */
     public function setCallCourer(?bool $callCourer = null): self
     {
@@ -1946,7 +1946,7 @@ class Order extends AbstractStructBase
      * This property is removable from request (nillable=true+minOccurs=0), therefore
      * if the value assigned to this property is null, it is removed from this object
      * @param string $typeOfParentForWaybill
-     * @return \StructType\Order
+     * @return \Oihso\CSESDK\StructType\Order
      */
     public function setTypeOfParentForWaybill(?string $typeOfParentForWaybill = null): self
     {
@@ -1978,7 +1978,7 @@ class Order extends AbstractStructBase
      * This property is removable from request (nillable=true+minOccurs=0), therefore
      * if the value assigned to this property is null, it is removed from this object
      * @param string $parentOrderForWaybill
-     * @return \StructType\Order
+     * @return \Oihso\CSESDK\StructType\Order
      */
     public function setParentOrderForWaybill(?string $parentOrderForWaybill = null): self
     {
@@ -2010,7 +2010,7 @@ class Order extends AbstractStructBase
      * This property is removable from request (nillable=true+minOccurs=0), therefore
      * if the value assigned to this property is null, it is removed from this object
      * @param string $clientNumber
-     * @return \StructType\Order
+     * @return \Oihso\CSESDK\StructType\Order
      */
     public function setClientNumber(?string $clientNumber = null): self
     {
@@ -2031,7 +2031,7 @@ class Order extends AbstractStructBase
      * An additional test has been added (isset) before returning the property value as
      * this property may have been unset before, due to the fact that this property is
      * removable from the request (nillable=true+minOccurs=0)
-     * @return \StructType\DocumentsPhoto[]
+     * @return \Oihso\CSESDK\StructType\DocumentsPhoto[]
      */
     public function getArrayOfDocumentsPhoto(): ?array
     {
@@ -2053,12 +2053,12 @@ class Order extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $orderArrayOfDocumentsPhotoItem) {
             // validation for constraint: itemType
-            if (!$orderArrayOfDocumentsPhotoItem instanceof \StructType\DocumentsPhoto) {
+            if (!$orderArrayOfDocumentsPhotoItem instanceof \Oihso\CSESDK\StructType\DocumentsPhoto) {
                 $invalidValues[] = is_object($orderArrayOfDocumentsPhotoItem) ? get_class($orderArrayOfDocumentsPhotoItem) : sprintf('%s(%s)', gettype($orderArrayOfDocumentsPhotoItem), var_export($orderArrayOfDocumentsPhotoItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The ArrayOfDocumentsPhoto property can only contain items of type \StructType\DocumentsPhoto, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The ArrayOfDocumentsPhoto property can only contain items of type \Oihso\CSESDK\StructType\DocumentsPhoto, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -2069,8 +2069,8 @@ class Order extends AbstractStructBase
      * This property is removable from request (nillable=true+minOccurs=0), therefore
      * if the value assigned to this property is null, it is removed from this object
      * @throws InvalidArgumentException
-     * @param \StructType\DocumentsPhoto[] $arrayOfDocumentsPhoto
-     * @return \StructType\Order
+     * @param \Oihso\CSESDK\StructType\DocumentsPhoto[] $arrayOfDocumentsPhoto
+     * @return \Oihso\CSESDK\StructType\Order
      */
     public function setArrayOfDocumentsPhoto(?array $arrayOfDocumentsPhoto = null): self
     {
@@ -2089,14 +2089,14 @@ class Order extends AbstractStructBase
     /**
      * Add item to ArrayOfDocumentsPhoto value
      * @throws InvalidArgumentException
-     * @param \StructType\DocumentsPhoto $item
-     * @return \StructType\Order
+     * @param \Oihso\CSESDK\StructType\DocumentsPhoto $item
+     * @return \Oihso\CSESDK\StructType\Order
      */
-    public function addToArrayOfDocumentsPhoto(\StructType\DocumentsPhoto $item): self
+    public function addToArrayOfDocumentsPhoto(\Oihso\CSESDK\StructType\DocumentsPhoto $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\DocumentsPhoto) {
-            throw new InvalidArgumentException(sprintf('The ArrayOfDocumentsPhoto property can only contain items of type \StructType\DocumentsPhoto, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Oihso\CSESDK\StructType\DocumentsPhoto) {
+            throw new InvalidArgumentException(sprintf('The ArrayOfDocumentsPhoto property can only contain items of type \Oihso\CSESDK\StructType\DocumentsPhoto, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->ArrayOfDocumentsPhoto[] = $item;
         
@@ -2118,7 +2118,7 @@ class Order extends AbstractStructBase
      * This property is removable from request (nillable=true+minOccurs=0), therefore
      * if the value assigned to this property is null, it is removed from this object
      * @param string $repository
-     * @return \StructType\Order
+     * @return \Oihso\CSESDK\StructType\Order
      */
     public function setRepository(?string $repository = null): self
     {
@@ -2139,7 +2139,7 @@ class Order extends AbstractStructBase
      * An additional test has been added (isset) before returning the property value as
      * this property may have been unset before, due to the fact that this property is
      * removable from the request (nillable=true+minOccurs=0)
-     * @return \StructType\ListOfCorrespondences[]
+     * @return \Oihso\CSESDK\StructType\ListOfCorrespondences[]
      */
     public function getClientCodes(): ?array
     {
@@ -2161,12 +2161,12 @@ class Order extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $orderClientCodesItem) {
             // validation for constraint: itemType
-            if (!$orderClientCodesItem instanceof \StructType\ListOfCorrespondences) {
+            if (!$orderClientCodesItem instanceof \Oihso\CSESDK\StructType\ListOfCorrespondences) {
                 $invalidValues[] = is_object($orderClientCodesItem) ? get_class($orderClientCodesItem) : sprintf('%s(%s)', gettype($orderClientCodesItem), var_export($orderClientCodesItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The ClientCodes property can only contain items of type \StructType\ListOfCorrespondences, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The ClientCodes property can only contain items of type \Oihso\CSESDK\StructType\ListOfCorrespondences, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -2177,8 +2177,8 @@ class Order extends AbstractStructBase
      * This property is removable from request (nillable=true+minOccurs=0), therefore
      * if the value assigned to this property is null, it is removed from this object
      * @throws InvalidArgumentException
-     * @param \StructType\ListOfCorrespondences[] $clientCodes
-     * @return \StructType\Order
+     * @param \Oihso\CSESDK\StructType\ListOfCorrespondences[] $clientCodes
+     * @return \Oihso\CSESDK\StructType\Order
      */
     public function setClientCodes(?array $clientCodes = null): self
     {
@@ -2197,14 +2197,14 @@ class Order extends AbstractStructBase
     /**
      * Add item to ClientCodes value
      * @throws InvalidArgumentException
-     * @param \StructType\ListOfCorrespondences $item
-     * @return \StructType\Order
+     * @param \Oihso\CSESDK\StructType\ListOfCorrespondences $item
+     * @return \Oihso\CSESDK\StructType\Order
      */
-    public function addToClientCodes(\StructType\ListOfCorrespondences $item): self
+    public function addToClientCodes(\Oihso\CSESDK\StructType\ListOfCorrespondences $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\ListOfCorrespondences) {
-            throw new InvalidArgumentException(sprintf('The ClientCodes property can only contain items of type \StructType\ListOfCorrespondences, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Oihso\CSESDK\StructType\ListOfCorrespondences) {
+            throw new InvalidArgumentException(sprintf('The ClientCodes property can only contain items of type \Oihso\CSESDK\StructType\ListOfCorrespondences, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->ClientCodes[] = $item;
         
@@ -2226,7 +2226,7 @@ class Order extends AbstractStructBase
      * This property is removable from request (nillable=true+minOccurs=0), therefore
      * if the value assigned to this property is null, it is removed from this object
      * @param string $deliveryDateOf
-     * @return \StructType\Order
+     * @return \Oihso\CSESDK\StructType\Order
      */
     public function setDeliveryDateOf(?string $deliveryDateOf = null): self
     {
@@ -2247,7 +2247,7 @@ class Order extends AbstractStructBase
      * An additional test has been added (isset) before returning the property value as
      * this property may have been unset before, due to the fact that this property is
      * removable from the request (nillable=true+minOccurs=0)
-     * @return \StructType\ListOfCorrespondences[]
+     * @return \Oihso\CSESDK\StructType\ListOfCorrespondences[]
      */
     public function getServices(): ?array
     {
@@ -2269,12 +2269,12 @@ class Order extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $orderServicesItem) {
             // validation for constraint: itemType
-            if (!$orderServicesItem instanceof \StructType\ListOfCorrespondences) {
+            if (!$orderServicesItem instanceof \Oihso\CSESDK\StructType\ListOfCorrespondences) {
                 $invalidValues[] = is_object($orderServicesItem) ? get_class($orderServicesItem) : sprintf('%s(%s)', gettype($orderServicesItem), var_export($orderServicesItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The Services property can only contain items of type \StructType\ListOfCorrespondences, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The Services property can only contain items of type \Oihso\CSESDK\StructType\ListOfCorrespondences, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -2285,8 +2285,8 @@ class Order extends AbstractStructBase
      * This property is removable from request (nillable=true+minOccurs=0), therefore
      * if the value assigned to this property is null, it is removed from this object
      * @throws InvalidArgumentException
-     * @param \StructType\ListOfCorrespondences[] $services
-     * @return \StructType\Order
+     * @param \Oihso\CSESDK\StructType\ListOfCorrespondences[] $services
+     * @return \Oihso\CSESDK\StructType\Order
      */
     public function setServices(?array $services = null): self
     {
@@ -2305,14 +2305,14 @@ class Order extends AbstractStructBase
     /**
      * Add item to Services value
      * @throws InvalidArgumentException
-     * @param \StructType\ListOfCorrespondences $item
-     * @return \StructType\Order
+     * @param \Oihso\CSESDK\StructType\ListOfCorrespondences $item
+     * @return \Oihso\CSESDK\StructType\Order
      */
-    public function addToServices(\StructType\ListOfCorrespondences $item): self
+    public function addToServices(\Oihso\CSESDK\StructType\ListOfCorrespondences $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\ListOfCorrespondences) {
-            throw new InvalidArgumentException(sprintf('The Services property can only contain items of type \StructType\ListOfCorrespondences, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Oihso\CSESDK\StructType\ListOfCorrespondences) {
+            throw new InvalidArgumentException(sprintf('The Services property can only contain items of type \Oihso\CSESDK\StructType\ListOfCorrespondences, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->Services[] = $item;
         
@@ -2323,7 +2323,7 @@ class Order extends AbstractStructBase
      * An additional test has been added (isset) before returning the property value as
      * this property may have been unset before, due to the fact that this property is
      * removable from the request (nillable=true+minOccurs=0)
-     * @return \StructType\ListOfCorrespondences[]
+     * @return \Oihso\CSESDK\StructType\ListOfCorrespondences[]
      */
     public function getAdditionalServices(): ?array
     {
@@ -2345,12 +2345,12 @@ class Order extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $orderAdditionalServicesItem) {
             // validation for constraint: itemType
-            if (!$orderAdditionalServicesItem instanceof \StructType\ListOfCorrespondences) {
+            if (!$orderAdditionalServicesItem instanceof \Oihso\CSESDK\StructType\ListOfCorrespondences) {
                 $invalidValues[] = is_object($orderAdditionalServicesItem) ? get_class($orderAdditionalServicesItem) : sprintf('%s(%s)', gettype($orderAdditionalServicesItem), var_export($orderAdditionalServicesItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The AdditionalServices property can only contain items of type \StructType\ListOfCorrespondences, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The AdditionalServices property can only contain items of type \Oihso\CSESDK\StructType\ListOfCorrespondences, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -2361,8 +2361,8 @@ class Order extends AbstractStructBase
      * This property is removable from request (nillable=true+minOccurs=0), therefore
      * if the value assigned to this property is null, it is removed from this object
      * @throws InvalidArgumentException
-     * @param \StructType\ListOfCorrespondences[] $additionalServices
-     * @return \StructType\Order
+     * @param \Oihso\CSESDK\StructType\ListOfCorrespondences[] $additionalServices
+     * @return \Oihso\CSESDK\StructType\Order
      */
     public function setAdditionalServices(?array $additionalServices = null): self
     {
@@ -2381,14 +2381,14 @@ class Order extends AbstractStructBase
     /**
      * Add item to AdditionalServices value
      * @throws InvalidArgumentException
-     * @param \StructType\ListOfCorrespondences $item
-     * @return \StructType\Order
+     * @param \Oihso\CSESDK\StructType\ListOfCorrespondences $item
+     * @return \Oihso\CSESDK\StructType\Order
      */
-    public function addToAdditionalServices(\StructType\ListOfCorrespondences $item): self
+    public function addToAdditionalServices(\Oihso\CSESDK\StructType\ListOfCorrespondences $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\ListOfCorrespondences) {
-            throw new InvalidArgumentException(sprintf('The AdditionalServices property can only contain items of type \StructType\ListOfCorrespondences, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Oihso\CSESDK\StructType\ListOfCorrespondences) {
+            throw new InvalidArgumentException(sprintf('The AdditionalServices property can only contain items of type \Oihso\CSESDK\StructType\ListOfCorrespondences, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->AdditionalServices[] = $item;
         

@@ -18,10 +18,10 @@ class Ping extends AbstractSoapClientBase
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \StructType\Ping $parameters
-     * @return \StructType\PingResponse|bool
+     * @param \Oihso\CSESDK\StructType\Ping $parameters
+     * @return \Oihso\CSESDK\StructType\PingResponse|bool
      */
-    public function Ping(\StructType\Ping $parameters)
+    public function Ping(\Oihso\CSESDK\StructType\Ping $parameters)
     {
         try {
             $this->setResult($resultPing = $this->getSoapClient()->__soapCall('Ping', [
@@ -38,7 +38,7 @@ class Ping extends AbstractSoapClientBase
     /**
      * Returns the result
      * @see AbstractSoapClientBase::getResult()
-     * @return \StructType\PingResponse
+     * @return \Oihso\CSESDK\StructType\PingResponse
      */
     public function getResult()
     {

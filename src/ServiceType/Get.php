@@ -18,10 +18,10 @@ class Get extends AbstractSoapClientBase
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \StructType\GetDocuments $parameters
-     * @return \StructType\GetDocumentsResponse|bool
+     * @param \Oihso\CSESDK\StructType\GetDocuments $parameters
+     * @return \Oihso\CSESDK\StructType\GetDocumentsResponse|bool
      */
-    public function GetDocuments(\StructType\GetDocuments $parameters)
+    public function GetDocuments(\Oihso\CSESDK\StructType\GetDocuments $parameters)
     {
         try {
             $this->setResult($resultGetDocuments = $this->getSoapClient()->__soapCall('GetDocuments', [
@@ -40,10 +40,10 @@ class Get extends AbstractSoapClientBase
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \StructType\GetFormsForDocuments $parameters
-     * @return \StructType\GetFormsForDocumentsResponse|bool
+     * @param \Oihso\CSESDK\StructType\GetFormsForDocuments $parameters
+     * @return \Oihso\CSESDK\StructType\GetFormsForDocumentsResponse|bool
      */
-    public function GetFormsForDocuments(\StructType\GetFormsForDocuments $parameters)
+    public function GetFormsForDocuments(\Oihso\CSESDK\StructType\GetFormsForDocuments $parameters)
     {
         try {
             $this->setResult($resultGetFormsForDocuments = $this->getSoapClient()->__soapCall('GetFormsForDocuments', [
@@ -62,10 +62,10 @@ class Get extends AbstractSoapClientBase
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \StructType\GetListOfDocuments $parameters
-     * @return \StructType\GetListOfDocumentsResponse|bool
+     * @param \Oihso\CSESDK\StructType\GetListOfDocuments $parameters
+     * @return \Oihso\CSESDK\StructType\GetListOfDocumentsResponse|bool
      */
-    public function GetListOfDocuments(\StructType\GetListOfDocuments $parameters)
+    public function GetListOfDocuments(\Oihso\CSESDK\StructType\GetListOfDocuments $parameters)
     {
         try {
             $this->setResult($resultGetListOfDocuments = $this->getSoapClient()->__soapCall('GetListOfDocuments', [
@@ -84,10 +84,10 @@ class Get extends AbstractSoapClientBase
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \StructType\GetReferenceData $parameters
-     * @return \StructType\GetReferenceDataResponse|bool
+     * @param \Oihso\CSESDK\StructType\GetReferenceData $parameters
+     * @return \Oihso\CSESDK\StructType\GetReferenceDataResponse|bool
      */
-    public function GetReferenceData(\StructType\GetReferenceData $parameters)
+    public function GetReferenceData(\Oihso\CSESDK\StructType\GetReferenceData $parameters)
     {
         try {
             $this->setResult($resultGetReferenceData = $this->getSoapClient()->__soapCall('GetReferenceData', [
@@ -106,10 +106,10 @@ class Get extends AbstractSoapClientBase
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \StructType\GetUserInfo $parameters
-     * @return \StructType\GetUserInfoResponse|bool
+     * @param \Oihso\CSESDK\StructType\GetUserInfo $parameters
+     * @return \Oihso\CSESDK\StructType\GetUserInfoResponse|bool
      */
-    public function GetUserInfo(\StructType\GetUserInfo $parameters)
+    public function GetUserInfo(\Oihso\CSESDK\StructType\GetUserInfo $parameters)
     {
         try {
             $this->setResult($resultGetUserInfo = $this->getSoapClient()->__soapCall('GetUserInfo', [
@@ -126,7 +126,7 @@ class Get extends AbstractSoapClientBase
     /**
      * Returns the result
      * @see AbstractSoapClientBase::getResult()
-     * @return \StructType\GetDocumentsResponse|\StructType\GetFormsForDocumentsResponse|\StructType\GetListOfDocumentsResponse|\StructType\GetReferenceDataResponse|\StructType\GetUserInfoResponse
+     * @return \Oihso\CSESDK\StructType\GetDocumentsResponse|\Oihso\CSESDK\StructType\GetFormsForDocumentsResponse|\Oihso\CSESDK\StructType\GetListOfDocumentsResponse|\Oihso\CSESDK\StructType\GetReferenceDataResponse|\Oihso\CSESDK\StructType\GetUserInfoResponse
      */
     public function getResult()
     {

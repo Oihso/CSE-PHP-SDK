@@ -18,10 +18,10 @@ class Check extends AbstractSoapClientBase
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \StructType\CheckClientNumber $parameters
-     * @return \StructType\CheckClientNumberResponse|bool
+     * @param \Oihso\CSESDK\StructType\CheckClientNumber $parameters
+     * @return \Oihso\CSESDK\StructType\CheckClientNumberResponse|bool
      */
-    public function CheckClientNumber(\StructType\CheckClientNumber $parameters)
+    public function CheckClientNumber(\Oihso\CSESDK\StructType\CheckClientNumber $parameters)
     {
         try {
             $this->setResult($resultCheckClientNumber = $this->getSoapClient()->__soapCall('CheckClientNumber', [
@@ -40,10 +40,10 @@ class Check extends AbstractSoapClientBase
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \StructType\CheckPlannedDeliveryDate $parameters
-     * @return \StructType\CheckPlannedDeliveryDateResponse|bool
+     * @param \Oihso\CSESDK\StructType\CheckPlannedDeliveryDate $parameters
+     * @return \Oihso\CSESDK\StructType\CheckPlannedDeliveryDateResponse|bool
      */
-    public function CheckPlannedDeliveryDate(\StructType\CheckPlannedDeliveryDate $parameters)
+    public function CheckPlannedDeliveryDate(\Oihso\CSESDK\StructType\CheckPlannedDeliveryDate $parameters)
     {
         try {
             $this->setResult($resultCheckPlannedDeliveryDate = $this->getSoapClient()->__soapCall('CheckPlannedDeliveryDate', [
@@ -60,7 +60,7 @@ class Check extends AbstractSoapClientBase
     /**
      * Returns the result
      * @see AbstractSoapClientBase::getResult()
-     * @return \StructType\CheckClientNumberResponse|\StructType\CheckPlannedDeliveryDateResponse
+     * @return \Oihso\CSESDK\StructType\CheckClientNumberResponse|\Oihso\CSESDK\StructType\CheckPlannedDeliveryDateResponse
      */
     public function getResult()
     {

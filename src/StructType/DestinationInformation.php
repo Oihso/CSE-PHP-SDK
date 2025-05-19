@@ -35,9 +35,9 @@ class DestinationInformation extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - minOccurs: 0
      * - nillable: true
-     * @var \StructType\DestinationAddress|null
+     * @var \Oihso\CSESDK\StructType\DestinationAddress|null
      */
-    protected ?\StructType\DestinationAddress $Address = null;
+    protected ?\Oihso\CSESDK\StructType\DestinationAddress $Address = null;
     /**
      * The SubwayStation
      * Meta information extracted from the WSDL
@@ -83,16 +83,16 @@ class DestinationInformation extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - minOccurs: 0
      * - nillable: true
-     * @var \StructType\Cargo|null
+     * @var \Oihso\CSESDK\StructType\Cargo|null
      */
-    protected ?\StructType\Cargo $Cargo = null;
+    protected ?\Oihso\CSESDK\StructType\Cargo $Cargo = null;
     /**
      * The Products
      * Meta information extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - nillable: true
-     * @var \StructType\Products[]
+     * @var \Oihso\CSESDK\StructType\Products[]
      */
     protected ?array $Products = null;
     /**
@@ -117,7 +117,7 @@ class DestinationInformation extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - nillable: true
-     * @var \StructType\Materials[]
+     * @var \Oihso\CSESDK\StructType\Materials[]
      */
     protected ?array $Materials = null;
     /**
@@ -133,9 +133,9 @@ class DestinationInformation extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - minOccurs: 0
      * - nillable: true
-     * @var \StructType\DeliveryOptions|null
+     * @var \Oihso\CSESDK\StructType\DeliveryOptions|null
      */
-    protected ?\StructType\DeliveryOptions $DeliveryOptions = null;
+    protected ?\Oihso\CSESDK\StructType\DeliveryOptions $DeliveryOptions = null;
     /**
      * Constructor method for DestinationInformation
      * @uses DestinationInformation::setClient()
@@ -155,21 +155,21 @@ class DestinationInformation extends AbstractStructBase
      * @uses DestinationInformation::setDeliveryOptions()
      * @param string $client
      * @param string $official
-     * @param \StructType\DestinationAddress $address
+     * @param \Oihso\CSESDK\StructType\DestinationAddress $address
      * @param string $subwayStation
      * @param string $phone
      * @param string $eMail
      * @param string $info
      * @param string $urgency
-     * @param \StructType\Cargo $cargo
-     * @param \StructType\Products[] $products
+     * @param \Oihso\CSESDK\StructType\Cargo $cargo
+     * @param \Oihso\CSESDK\StructType\Products[] $products
      * @param string $productsProcessingAction
      * @param bool $storeDependsOnDestination
-     * @param \StructType\Materials[] $materials
+     * @param \Oihso\CSESDK\StructType\Materials[] $materials
      * @param string $pVZ
-     * @param \StructType\DeliveryOptions $deliveryOptions
+     * @param \Oihso\CSESDK\StructType\DeliveryOptions $deliveryOptions
      */
-    public function __construct(?string $client = null, ?string $official = null, ?\StructType\DestinationAddress $address = null, ?string $subwayStation = null, ?string $phone = null, ?string $eMail = null, ?string $info = null, ?string $urgency = null, ?\StructType\Cargo $cargo = null, ?array $products = null, ?string $productsProcessingAction = null, ?bool $storeDependsOnDestination = null, ?array $materials = null, ?string $pVZ = null, ?\StructType\DeliveryOptions $deliveryOptions = null)
+    public function __construct(?string $client = null, ?string $official = null, ?\Oihso\CSESDK\StructType\DestinationAddress $address = null, ?string $subwayStation = null, ?string $phone = null, ?string $eMail = null, ?string $info = null, ?string $urgency = null, ?\Oihso\CSESDK\StructType\Cargo $cargo = null, ?array $products = null, ?string $productsProcessingAction = null, ?bool $storeDependsOnDestination = null, ?array $materials = null, ?string $pVZ = null, ?\Oihso\CSESDK\StructType\DeliveryOptions $deliveryOptions = null)
     {
         $this
             ->setClient($client)
@@ -204,7 +204,7 @@ class DestinationInformation extends AbstractStructBase
      * This property is removable from request (nillable=true+minOccurs=0), therefore
      * if the value assigned to this property is null, it is removed from this object
      * @param string $client
-     * @return \StructType\DestinationInformation
+     * @return \Oihso\CSESDK\StructType\DestinationInformation
      */
     public function setClient(?string $client = null): self
     {
@@ -236,7 +236,7 @@ class DestinationInformation extends AbstractStructBase
      * This property is removable from request (nillable=true+minOccurs=0), therefore
      * if the value assigned to this property is null, it is removed from this object
      * @param string $official
-     * @return \StructType\DestinationInformation
+     * @return \Oihso\CSESDK\StructType\DestinationInformation
      */
     public function setOfficial(?string $official = null): self
     {
@@ -257,9 +257,9 @@ class DestinationInformation extends AbstractStructBase
      * An additional test has been added (isset) before returning the property value as
      * this property may have been unset before, due to the fact that this property is
      * removable from the request (nillable=true+minOccurs=0)
-     * @return \StructType\DestinationAddress|null
+     * @return \Oihso\CSESDK\StructType\DestinationAddress|null
      */
-    public function getAddress(): ?\StructType\DestinationAddress
+    public function getAddress(): ?\Oihso\CSESDK\StructType\DestinationAddress
     {
         return $this->Address ?? null;
     }
@@ -267,10 +267,10 @@ class DestinationInformation extends AbstractStructBase
      * Set Address value
      * This property is removable from request (nillable=true+minOccurs=0), therefore
      * if the value assigned to this property is null, it is removed from this object
-     * @param \StructType\DestinationAddress $address
-     * @return \StructType\DestinationInformation
+     * @param \Oihso\CSESDK\StructType\DestinationAddress $address
+     * @return \Oihso\CSESDK\StructType\DestinationInformation
      */
-    public function setAddress(?\StructType\DestinationAddress $address = null): self
+    public function setAddress(?\Oihso\CSESDK\StructType\DestinationAddress $address = null): self
     {
         if (is_null($address) || (is_array($address) && empty($address))) {
             unset($this->Address);
@@ -296,7 +296,7 @@ class DestinationInformation extends AbstractStructBase
      * This property is removable from request (nillable=true+minOccurs=0), therefore
      * if the value assigned to this property is null, it is removed from this object
      * @param string $subwayStation
-     * @return \StructType\DestinationInformation
+     * @return \Oihso\CSESDK\StructType\DestinationInformation
      */
     public function setSubwayStation(?string $subwayStation = null): self
     {
@@ -328,7 +328,7 @@ class DestinationInformation extends AbstractStructBase
      * This property is removable from request (nillable=true+minOccurs=0), therefore
      * if the value assigned to this property is null, it is removed from this object
      * @param string $phone
-     * @return \StructType\DestinationInformation
+     * @return \Oihso\CSESDK\StructType\DestinationInformation
      */
     public function setPhone(?string $phone = null): self
     {
@@ -360,7 +360,7 @@ class DestinationInformation extends AbstractStructBase
      * This property is removable from request (nillable=true+minOccurs=0), therefore
      * if the value assigned to this property is null, it is removed from this object
      * @param string $eMail
-     * @return \StructType\DestinationInformation
+     * @return \Oihso\CSESDK\StructType\DestinationInformation
      */
     public function setEMail(?string $eMail = null): self
     {
@@ -392,7 +392,7 @@ class DestinationInformation extends AbstractStructBase
      * This property is removable from request (nillable=true+minOccurs=0), therefore
      * if the value assigned to this property is null, it is removed from this object
      * @param string $info
-     * @return \StructType\DestinationInformation
+     * @return \Oihso\CSESDK\StructType\DestinationInformation
      */
     public function setInfo(?string $info = null): self
     {
@@ -424,7 +424,7 @@ class DestinationInformation extends AbstractStructBase
      * This property is removable from request (nillable=true+minOccurs=0), therefore
      * if the value assigned to this property is null, it is removed from this object
      * @param string $urgency
-     * @return \StructType\DestinationInformation
+     * @return \Oihso\CSESDK\StructType\DestinationInformation
      */
     public function setUrgency(?string $urgency = null): self
     {
@@ -445,9 +445,9 @@ class DestinationInformation extends AbstractStructBase
      * An additional test has been added (isset) before returning the property value as
      * this property may have been unset before, due to the fact that this property is
      * removable from the request (nillable=true+minOccurs=0)
-     * @return \StructType\Cargo|null
+     * @return \Oihso\CSESDK\StructType\Cargo|null
      */
-    public function getCargo(): ?\StructType\Cargo
+    public function getCargo(): ?\Oihso\CSESDK\StructType\Cargo
     {
         return $this->Cargo ?? null;
     }
@@ -455,10 +455,10 @@ class DestinationInformation extends AbstractStructBase
      * Set Cargo value
      * This property is removable from request (nillable=true+minOccurs=0), therefore
      * if the value assigned to this property is null, it is removed from this object
-     * @param \StructType\Cargo $cargo
-     * @return \StructType\DestinationInformation
+     * @param \Oihso\CSESDK\StructType\Cargo $cargo
+     * @return \Oihso\CSESDK\StructType\DestinationInformation
      */
-    public function setCargo(?\StructType\Cargo $cargo = null): self
+    public function setCargo(?\Oihso\CSESDK\StructType\Cargo $cargo = null): self
     {
         if (is_null($cargo) || (is_array($cargo) && empty($cargo))) {
             unset($this->Cargo);
@@ -473,7 +473,7 @@ class DestinationInformation extends AbstractStructBase
      * An additional test has been added (isset) before returning the property value as
      * this property may have been unset before, due to the fact that this property is
      * removable from the request (nillable=true+minOccurs=0)
-     * @return \StructType\Products[]
+     * @return \Oihso\CSESDK\StructType\Products[]
      */
     public function getProducts(): ?array
     {
@@ -495,12 +495,12 @@ class DestinationInformation extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $destinationInformationProductsItem) {
             // validation for constraint: itemType
-            if (!$destinationInformationProductsItem instanceof \StructType\Products) {
+            if (!$destinationInformationProductsItem instanceof \Oihso\CSESDK\StructType\Products) {
                 $invalidValues[] = is_object($destinationInformationProductsItem) ? get_class($destinationInformationProductsItem) : sprintf('%s(%s)', gettype($destinationInformationProductsItem), var_export($destinationInformationProductsItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The Products property can only contain items of type \StructType\Products, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The Products property can only contain items of type \Oihso\CSESDK\StructType\Products, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -511,8 +511,8 @@ class DestinationInformation extends AbstractStructBase
      * This property is removable from request (nillable=true+minOccurs=0), therefore
      * if the value assigned to this property is null, it is removed from this object
      * @throws InvalidArgumentException
-     * @param \StructType\Products[] $products
-     * @return \StructType\DestinationInformation
+     * @param \Oihso\CSESDK\StructType\Products[] $products
+     * @return \Oihso\CSESDK\StructType\DestinationInformation
      */
     public function setProducts(?array $products = null): self
     {
@@ -531,14 +531,14 @@ class DestinationInformation extends AbstractStructBase
     /**
      * Add item to Products value
      * @throws InvalidArgumentException
-     * @param \StructType\Products $item
-     * @return \StructType\DestinationInformation
+     * @param \Oihso\CSESDK\StructType\Products $item
+     * @return \Oihso\CSESDK\StructType\DestinationInformation
      */
-    public function addToProducts(\StructType\Products $item): self
+    public function addToProducts(\Oihso\CSESDK\StructType\Products $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Products) {
-            throw new InvalidArgumentException(sprintf('The Products property can only contain items of type \StructType\Products, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Oihso\CSESDK\StructType\Products) {
+            throw new InvalidArgumentException(sprintf('The Products property can only contain items of type \Oihso\CSESDK\StructType\Products, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->Products[] = $item;
         
@@ -560,7 +560,7 @@ class DestinationInformation extends AbstractStructBase
      * This property is removable from request (nillable=true+minOccurs=0), therefore
      * if the value assigned to this property is null, it is removed from this object
      * @param string $productsProcessingAction
-     * @return \StructType\DestinationInformation
+     * @return \Oihso\CSESDK\StructType\DestinationInformation
      */
     public function setProductsProcessingAction(?string $productsProcessingAction = null): self
     {
@@ -592,7 +592,7 @@ class DestinationInformation extends AbstractStructBase
      * This property is removable from request (nillable=true+minOccurs=0), therefore
      * if the value assigned to this property is null, it is removed from this object
      * @param bool $storeDependsOnDestination
-     * @return \StructType\DestinationInformation
+     * @return \Oihso\CSESDK\StructType\DestinationInformation
      */
     public function setStoreDependsOnDestination(?bool $storeDependsOnDestination = null): self
     {
@@ -613,7 +613,7 @@ class DestinationInformation extends AbstractStructBase
      * An additional test has been added (isset) before returning the property value as
      * this property may have been unset before, due to the fact that this property is
      * removable from the request (nillable=true+minOccurs=0)
-     * @return \StructType\Materials[]
+     * @return \Oihso\CSESDK\StructType\Materials[]
      */
     public function getMaterials(): ?array
     {
@@ -635,12 +635,12 @@ class DestinationInformation extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $destinationInformationMaterialsItem) {
             // validation for constraint: itemType
-            if (!$destinationInformationMaterialsItem instanceof \StructType\Materials) {
+            if (!$destinationInformationMaterialsItem instanceof \Oihso\CSESDK\StructType\Materials) {
                 $invalidValues[] = is_object($destinationInformationMaterialsItem) ? get_class($destinationInformationMaterialsItem) : sprintf('%s(%s)', gettype($destinationInformationMaterialsItem), var_export($destinationInformationMaterialsItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The Materials property can only contain items of type \StructType\Materials, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The Materials property can only contain items of type \Oihso\CSESDK\StructType\Materials, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -651,8 +651,8 @@ class DestinationInformation extends AbstractStructBase
      * This property is removable from request (nillable=true+minOccurs=0), therefore
      * if the value assigned to this property is null, it is removed from this object
      * @throws InvalidArgumentException
-     * @param \StructType\Materials[] $materials
-     * @return \StructType\DestinationInformation
+     * @param \Oihso\CSESDK\StructType\Materials[] $materials
+     * @return \Oihso\CSESDK\StructType\DestinationInformation
      */
     public function setMaterials(?array $materials = null): self
     {
@@ -671,14 +671,14 @@ class DestinationInformation extends AbstractStructBase
     /**
      * Add item to Materials value
      * @throws InvalidArgumentException
-     * @param \StructType\Materials $item
-     * @return \StructType\DestinationInformation
+     * @param \Oihso\CSESDK\StructType\Materials $item
+     * @return \Oihso\CSESDK\StructType\DestinationInformation
      */
-    public function addToMaterials(\StructType\Materials $item): self
+    public function addToMaterials(\Oihso\CSESDK\StructType\Materials $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\Materials) {
-            throw new InvalidArgumentException(sprintf('The Materials property can only contain items of type \StructType\Materials, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Oihso\CSESDK\StructType\Materials) {
+            throw new InvalidArgumentException(sprintf('The Materials property can only contain items of type \Oihso\CSESDK\StructType\Materials, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         $this->Materials[] = $item;
         
@@ -700,7 +700,7 @@ class DestinationInformation extends AbstractStructBase
      * This property is removable from request (nillable=true+minOccurs=0), therefore
      * if the value assigned to this property is null, it is removed from this object
      * @param string $pVZ
-     * @return \StructType\DestinationInformation
+     * @return \Oihso\CSESDK\StructType\DestinationInformation
      */
     public function setPVZ(?string $pVZ = null): self
     {
@@ -721,9 +721,9 @@ class DestinationInformation extends AbstractStructBase
      * An additional test has been added (isset) before returning the property value as
      * this property may have been unset before, due to the fact that this property is
      * removable from the request (nillable=true+minOccurs=0)
-     * @return \StructType\DeliveryOptions|null
+     * @return \Oihso\CSESDK\StructType\DeliveryOptions|null
      */
-    public function getDeliveryOptions(): ?\StructType\DeliveryOptions
+    public function getDeliveryOptions(): ?\Oihso\CSESDK\StructType\DeliveryOptions
     {
         return $this->DeliveryOptions ?? null;
     }
@@ -731,10 +731,10 @@ class DestinationInformation extends AbstractStructBase
      * Set DeliveryOptions value
      * This property is removable from request (nillable=true+minOccurs=0), therefore
      * if the value assigned to this property is null, it is removed from this object
-     * @param \StructType\DeliveryOptions $deliveryOptions
-     * @return \StructType\DestinationInformation
+     * @param \Oihso\CSESDK\StructType\DeliveryOptions $deliveryOptions
+     * @return \Oihso\CSESDK\StructType\DestinationInformation
      */
-    public function setDeliveryOptions(?\StructType\DeliveryOptions $deliveryOptions = null): self
+    public function setDeliveryOptions(?\Oihso\CSESDK\StructType\DeliveryOptions $deliveryOptions = null): self
     {
         if (is_null($deliveryOptions) || (is_array($deliveryOptions) && empty($deliveryOptions))) {
             unset($this->DeliveryOptions);

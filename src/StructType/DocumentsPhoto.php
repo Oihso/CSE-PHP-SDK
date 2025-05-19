@@ -59,7 +59,7 @@ class DocumentsPhoto extends AbstractStructBase
      * This property is removable from request (nillable=true+minOccurs=0), therefore
      * if the value assigned to this property is null, it is removed from this object
      * @param string $document
-     * @return \StructType\DocumentsPhoto
+     * @return \Oihso\CSESDK\StructType\DocumentsPhoto
      */
     public function setDocument(?string $document = null): self
     {
@@ -91,7 +91,7 @@ class DocumentsPhoto extends AbstractStructBase
      * This property is removable from request (nillable=true+minOccurs=0), therefore
      * if the value assigned to this property is null, it is removed from this object
      * @param bool $required
-     * @return \StructType\DocumentsPhoto
+     * @return \Oihso\CSESDK\StructType\DocumentsPhoto
      */
     public function setRequired(?bool $required = null): self
     {

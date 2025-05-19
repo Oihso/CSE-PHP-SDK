@@ -40,9 +40,9 @@ class ResultString extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - minOccurs: 0
      * - nillable: true
-     * @var \StructType\Element|null
+     * @var \Oihso\CSESDK\StructType\Element|null
      */
-    protected ?\StructType\Element $Info = null;
+    protected ?\Oihso\CSESDK\StructType\Element $Info = null;
     /**
      * Constructor method for ResultString
      * @uses ResultString::setError()
@@ -52,9 +52,9 @@ class ResultString extends AbstractStructBase
      * @param bool $error
      * @param string $value
      * @param string $errorInfo
-     * @param \StructType\Element $info
+     * @param \Oihso\CSESDK\StructType\Element $info
      */
-    public function __construct(?bool $error = null, ?string $value = null, ?string $errorInfo = null, ?\StructType\Element $info = null)
+    public function __construct(?bool $error = null, ?string $value = null, ?string $errorInfo = null, ?\Oihso\CSESDK\StructType\Element $info = null)
     {
         $this
             ->setError($error)
@@ -73,7 +73,7 @@ class ResultString extends AbstractStructBase
     /**
      * Set Error value
      * @param bool $error
-     * @return \StructType\ResultString
+     * @return \Oihso\CSESDK\StructType\ResultString
      */
     public function setError(?bool $error = null): self
     {
@@ -101,7 +101,7 @@ class ResultString extends AbstractStructBase
      * This property is removable from request (nillable=true+minOccurs=0), therefore
      * if the value assigned to this property is null, it is removed from this object
      * @param string $value
-     * @return \StructType\ResultString
+     * @return \Oihso\CSESDK\StructType\ResultString
      */
     public function setValue(?string $value = null): self
     {
@@ -133,7 +133,7 @@ class ResultString extends AbstractStructBase
      * This property is removable from request (nillable=true+minOccurs=0), therefore
      * if the value assigned to this property is null, it is removed from this object
      * @param string $errorInfo
-     * @return \StructType\ResultString
+     * @return \Oihso\CSESDK\StructType\ResultString
      */
     public function setErrorInfo(?string $errorInfo = null): self
     {
@@ -154,9 +154,9 @@ class ResultString extends AbstractStructBase
      * An additional test has been added (isset) before returning the property value as
      * this property may have been unset before, due to the fact that this property is
      * removable from the request (nillable=true+minOccurs=0)
-     * @return \StructType\Element|null
+     * @return \Oihso\CSESDK\StructType\Element|null
      */
-    public function getInfo(): ?\StructType\Element
+    public function getInfo(): ?\Oihso\CSESDK\StructType\Element
     {
         return $this->Info ?? null;
     }
@@ -164,10 +164,10 @@ class ResultString extends AbstractStructBase
      * Set Info value
      * This property is removable from request (nillable=true+minOccurs=0), therefore
      * if the value assigned to this property is null, it is removed from this object
-     * @param \StructType\Element $info
-     * @return \StructType\ResultString
+     * @param \Oihso\CSESDK\StructType\Element $info
+     * @return \Oihso\CSESDK\StructType\ResultString
      */
-    public function setInfo(?\StructType\Element $info = null): self
+    public function setInfo(?\Oihso\CSESDK\StructType\Element $info = null): self
     {
         if (is_null($info) || (is_array($info) && empty($info))) {
             unset($this->Info);

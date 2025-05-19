@@ -16,33 +16,33 @@ class MeasurementResponse extends AbstractStructBase
 {
     /**
      * The return
-     * @var \StructType\ResultString|null
+     * @var \Oihso\CSESDK\StructType\ResultString|null
      */
-    protected ?\StructType\ResultString $return = null;
+    protected ?\Oihso\CSESDK\StructType\ResultString $return = null;
     /**
      * Constructor method for MeasurementResponse
      * @uses MeasurementResponse::setReturn()
-     * @param \StructType\ResultString $return
+     * @param \Oihso\CSESDK\StructType\ResultString $return
      */
-    public function __construct(?\StructType\ResultString $return = null)
+    public function __construct(?\Oihso\CSESDK\StructType\ResultString $return = null)
     {
         $this
             ->setReturn($return);
     }
     /**
      * Get return value
-     * @return \StructType\ResultString|null
+     * @return \Oihso\CSESDK\StructType\ResultString|null
      */
-    public function getReturn(): ?\StructType\ResultString
+    public function getReturn(): ?\Oihso\CSESDK\StructType\ResultString
     {
         return $this->return;
     }
     /**
      * Set return value
-     * @param \StructType\ResultString $return
-     * @return \StructType\MeasurementResponse
+     * @param \Oihso\CSESDK\StructType\ResultString $return
+     * @return \Oihso\CSESDK\StructType\MeasurementResponse
      */
-    public function setReturn(?\StructType\ResultString $return = null): self
+    public function setReturn(?\Oihso\CSESDK\StructType\ResultString $return = null): self
     {
         $this->return = $return;
         

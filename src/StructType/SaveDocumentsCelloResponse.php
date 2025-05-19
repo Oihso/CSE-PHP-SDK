@@ -40,7 +40,7 @@ class SaveDocumentsCelloResponse extends AbstractStructBase
     /**
      * Set return value
      * @param bool $return
-     * @return \StructType\SaveDocumentsCelloResponse
+     * @return \Oihso\CSESDK\StructType\SaveDocumentsCelloResponse
      */
     public function setReturn(?bool $return = null): self
     {

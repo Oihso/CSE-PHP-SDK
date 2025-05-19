@@ -84,7 +84,7 @@ class ResultPrint extends AbstractStructBase
     /**
      * Set Error value
      * @param bool $error
-     * @return \StructType\ResultPrint
+     * @return \Oihso\CSESDK\StructType\ResultPrint
      */
     public function setError(?bool $error = null): self
     {
@@ -112,7 +112,7 @@ class ResultPrint extends AbstractStructBase
      * This property is removable from request (nillable=true+minOccurs=0), therefore
      * if the value assigned to this property is null, it is removed from this object
      * @param string $value
-     * @return \StructType\ResultPrint
+     * @return \Oihso\CSESDK\StructType\ResultPrint
      */
     public function setValue(?string $value = null): self
     {
@@ -144,7 +144,7 @@ class ResultPrint extends AbstractStructBase
      * This property is removable from request (nillable=true+minOccurs=0), therefore
      * if the value assigned to this property is null, it is removed from this object
      * @param string $name
-     * @return \StructType\ResultPrint
+     * @return \Oihso\CSESDK\StructType\ResultPrint
      */
     public function setName(?string $name = null): self
     {
@@ -176,7 +176,7 @@ class ResultPrint extends AbstractStructBase
      * This property is removable from request (nillable=true+minOccurs=0), therefore
      * if the value assigned to this property is null, it is removed from this object
      * @param string $size
-     * @return \StructType\ResultPrint
+     * @return \Oihso\CSESDK\StructType\ResultPrint
      */
     public function setSize(?string $size = null): self
     {
@@ -208,7 +208,7 @@ class ResultPrint extends AbstractStructBase
      * This property is removable from request (nillable=true+minOccurs=0), therefore
      * if the value assigned to this property is null, it is removed from this object
      * @param string $errorInfo
-     * @return \StructType\ResultPrint
+     * @return \Oihso\CSESDK\StructType\ResultPrint
      */
     public function setErrorInfo(?string $errorInfo = null): self
     {

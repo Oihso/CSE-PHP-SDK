@@ -18,10 +18,10 @@ class Create extends AbstractSoapClientBase
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \StructType\CreateGMH $parameters
-     * @return \StructType\CreateGMHResponse|bool
+     * @param \Oihso\CSESDK\StructType\CreateGMH $parameters
+     * @return \Oihso\CSESDK\StructType\CreateGMHResponse|bool
      */
-    public function CreateGMH(\StructType\CreateGMH $parameters)
+    public function CreateGMH(\Oihso\CSESDK\StructType\CreateGMH $parameters)
     {
         try {
             $this->setResult($resultCreateGMH = $this->getSoapClient()->__soapCall('CreateGMH', [
@@ -38,7 +38,7 @@ class Create extends AbstractSoapClientBase
     /**
      * Returns the result
      * @see AbstractSoapClientBase::getResult()
-     * @return \StructType\CreateGMHResponse
+     * @return \Oihso\CSESDK\StructType\CreateGMHResponse
      */
     public function getResult()
     {

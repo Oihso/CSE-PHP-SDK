@@ -100,7 +100,7 @@ class Measurement extends AbstractStructBase
     /**
      * Set Number value
      * @param string $number
-     * @return \StructType\Measurement
+     * @return \Oihso\CSESDK\StructType\Measurement
      */
     public function setNumber(?string $number = null): self
     {
@@ -123,7 +123,7 @@ class Measurement extends AbstractStructBase
     /**
      * Set Login value
      * @param string $login
-     * @return \StructType\Measurement
+     * @return \Oihso\CSESDK\StructType\Measurement
      */
     public function setLogin(?string $login = null): self
     {
@@ -146,7 +146,7 @@ class Measurement extends AbstractStructBase
     /**
      * Set Password value
      * @param string $password
-     * @return \StructType\Measurement
+     * @return \Oihso\CSESDK\StructType\Measurement
      */
     public function setPassword(?string $password = null): self
     {
@@ -169,7 +169,7 @@ class Measurement extends AbstractStructBase
     /**
      * Set Length value
      * @param float $length
-     * @return \StructType\Measurement
+     * @return \Oihso\CSESDK\StructType\Measurement
      */
     public function setLength(?float $length = null): self
     {
@@ -192,7 +192,7 @@ class Measurement extends AbstractStructBase
     /**
      * Set Height value
      * @param float $height
-     * @return \StructType\Measurement
+     * @return \Oihso\CSESDK\StructType\Measurement
      */
     public function setHeight(?float $height = null): self
     {
@@ -215,7 +215,7 @@ class Measurement extends AbstractStructBase
     /**
      * Set Width value
      * @param float $width
-     * @return \StructType\Measurement
+     * @return \Oihso\CSESDK\StructType\Measurement
      */
     public function setWidth(?float $width = null): self
     {
@@ -238,7 +238,7 @@ class Measurement extends AbstractStructBase
     /**
      * Set Weight value
      * @param float $weight
-     * @return \StructType\Measurement
+     * @return \Oihso\CSESDK\StructType\Measurement
      */
     public function setWeight(?float $weight = null): self
     {

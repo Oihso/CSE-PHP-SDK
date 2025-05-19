@@ -16,9 +16,9 @@ class SaveWaybillOffice extends AbstractStructBase
 {
     /**
      * The OrderData
-     * @var \StructType\Order|null
+     * @var \Oihso\CSESDK\StructType\Order|null
      */
-    protected ?\StructType\Order $OrderData = null;
+    protected ?\Oihso\CSESDK\StructType\Order $OrderData = null;
     /**
      * The Language
      * Meta information extracted from the WSDL
@@ -78,7 +78,7 @@ class SaveWaybillOffice extends AbstractStructBase
      * @uses SaveWaybillOffice::setNumber()
      * @uses SaveWaybillOffice::setClientNumber()
      * @uses SaveWaybillOffice::setOffice()
-     * @param \StructType\Order $orderData
+     * @param \Oihso\CSESDK\StructType\Order $orderData
      * @param string $language
      * @param string $login
      * @param string $password
@@ -87,7 +87,7 @@ class SaveWaybillOffice extends AbstractStructBase
      * @param string $clientNumber
      * @param string $office
      */
-    public function __construct(?\StructType\Order $orderData = null, ?string $language = null, ?string $login = null, ?string $password = null, ?string $company = null, ?string $number = null, ?string $clientNumber = null, ?string $office = null)
+    public function __construct(?\Oihso\CSESDK\StructType\Order $orderData = null, ?string $language = null, ?string $login = null, ?string $password = null, ?string $company = null, ?string $number = null, ?string $clientNumber = null, ?string $office = null)
     {
         $this
             ->setOrderData($orderData)
@@ -101,18 +101,18 @@ class SaveWaybillOffice extends AbstractStructBase
     }
     /**
      * Get OrderData value
-     * @return \StructType\Order|null
+     * @return \Oihso\CSESDK\StructType\Order|null
      */
-    public function getOrderData(): ?\StructType\Order
+    public function getOrderData(): ?\Oihso\CSESDK\StructType\Order
     {
         return $this->OrderData;
     }
     /**
      * Set OrderData value
-     * @param \StructType\Order $orderData
-     * @return \StructType\SaveWaybillOffice
+     * @param \Oihso\CSESDK\StructType\Order $orderData
+     * @return \Oihso\CSESDK\StructType\SaveWaybillOffice
      */
-    public function setOrderData(?\StructType\Order $orderData = null): self
+    public function setOrderData(?\Oihso\CSESDK\StructType\Order $orderData = null): self
     {
         $this->OrderData = $orderData;
         
@@ -129,7 +129,7 @@ class SaveWaybillOffice extends AbstractStructBase
     /**
      * Set Language value
      * @param string $language
-     * @return \StructType\SaveWaybillOffice
+     * @return \Oihso\CSESDK\StructType\SaveWaybillOffice
      */
     public function setLanguage(?string $language = null): self
     {
@@ -152,7 +152,7 @@ class SaveWaybillOffice extends AbstractStructBase
     /**
      * Set Login value
      * @param string $login
-     * @return \StructType\SaveWaybillOffice
+     * @return \Oihso\CSESDK\StructType\SaveWaybillOffice
      */
     public function setLogin(?string $login = null): self
     {
@@ -175,7 +175,7 @@ class SaveWaybillOffice extends AbstractStructBase
     /**
      * Set Password value
      * @param string $password
-     * @return \StructType\SaveWaybillOffice
+     * @return \Oihso\CSESDK\StructType\SaveWaybillOffice
      */
     public function setPassword(?string $password = null): self
     {
@@ -198,7 +198,7 @@ class SaveWaybillOffice extends AbstractStructBase
     /**
      * Set Company value
      * @param string $company
-     * @return \StructType\SaveWaybillOffice
+     * @return \Oihso\CSESDK\StructType\SaveWaybillOffice
      */
     public function setCompany(?string $company = null): self
     {
@@ -221,7 +221,7 @@ class SaveWaybillOffice extends AbstractStructBase
     /**
      * Set Number value
      * @param string $number
-     * @return \StructType\SaveWaybillOffice
+     * @return \Oihso\CSESDK\StructType\SaveWaybillOffice
      */
     public function setNumber(?string $number = null): self
     {
@@ -244,7 +244,7 @@ class SaveWaybillOffice extends AbstractStructBase
     /**
      * Set ClientNumber value
      * @param string $clientNumber
-     * @return \StructType\SaveWaybillOffice
+     * @return \Oihso\CSESDK\StructType\SaveWaybillOffice
      */
     public function setClientNumber(?string $clientNumber = null): self
     {
@@ -267,7 +267,7 @@ class SaveWaybillOffice extends AbstractStructBase
     /**
      * Set Office value
      * @param string $office
-     * @return \StructType\SaveWaybillOffice
+     * @return \Oihso\CSESDK\StructType\SaveWaybillOffice
      */
     public function setOffice(?string $office = null): self
     {

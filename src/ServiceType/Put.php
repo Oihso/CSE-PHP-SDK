@@ -18,10 +18,10 @@ class Put extends AbstractSoapClientBase
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \StructType\PutReferenceData $parameters
-     * @return \StructType\PutReferenceDataResponse|bool
+     * @param \Oihso\CSESDK\StructType\PutReferenceData $parameters
+     * @return \Oihso\CSESDK\StructType\PutReferenceDataResponse|bool
      */
-    public function PutReferenceData(\StructType\PutReferenceData $parameters)
+    public function PutReferenceData(\Oihso\CSESDK\StructType\PutReferenceData $parameters)
     {
         try {
             $this->setResult($resultPutReferenceData = $this->getSoapClient()->__soapCall('PutReferenceData', [
@@ -40,10 +40,10 @@ class Put extends AbstractSoapClientBase
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \StructType\PutUserInfo $parameters
-     * @return \StructType\PutUserInfoResponse|bool
+     * @param \Oihso\CSESDK\StructType\PutUserInfo $parameters
+     * @return \Oihso\CSESDK\StructType\PutUserInfoResponse|bool
      */
-    public function PutUserInfo(\StructType\PutUserInfo $parameters)
+    public function PutUserInfo(\Oihso\CSESDK\StructType\PutUserInfo $parameters)
     {
         try {
             $this->setResult($resultPutUserInfo = $this->getSoapClient()->__soapCall('PutUserInfo', [
@@ -60,7 +60,7 @@ class Put extends AbstractSoapClientBase
     /**
      * Returns the result
      * @see AbstractSoapClientBase::getResult()
-     * @return \StructType\PutReferenceDataResponse|\StructType\PutUserInfoResponse
+     * @return \Oihso\CSESDK\StructType\PutReferenceDataResponse|\Oihso\CSESDK\StructType\PutUserInfoResponse
      */
     public function getResult()
     {

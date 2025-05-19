@@ -70,7 +70,7 @@ class Notifications extends AbstractStructBase
      * This property is removable from request (nillable=true+minOccurs=0), therefore
      * if the value assigned to this property is null, it is removed from this object
      * @param string $name
-     * @return \StructType\Notifications
+     * @return \Oihso\CSESDK\StructType\Notifications
      */
     public function setName(?string $name = null): self
     {
@@ -102,7 +102,7 @@ class Notifications extends AbstractStructBase
      * This property is removable from request (nillable=true+minOccurs=0), therefore
      * if the value assigned to this property is null, it is removed from this object
      * @param bool $sMS
-     * @return \StructType\Notifications
+     * @return \Oihso\CSESDK\StructType\Notifications
      */
     public function setSMS(?bool $sMS = null): self
     {
@@ -134,7 +134,7 @@ class Notifications extends AbstractStructBase
      * This property is removable from request (nillable=true+minOccurs=0), therefore
      * if the value assigned to this property is null, it is removed from this object
      * @param bool $email
-     * @return \StructType\Notifications
+     * @return \Oihso\CSESDK\StructType\Notifications
      */
     public function setEmail(?bool $email = null): self
     {
