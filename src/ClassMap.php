@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace CSESDK;
+namespace Oihso\CSESDK;
 
 /**
  * Class which returns the class map definition

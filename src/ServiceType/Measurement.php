@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace CSESDK\ServiceType;
+namespace Oihso\CSESDK\ServiceType;
 
 use SoapFault;
 use WsdlToPhp\PackageBase\AbstractSoapClientBase;

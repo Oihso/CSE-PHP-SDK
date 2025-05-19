@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace CSESDK\StructType;
+namespace Oihso\CSESDK\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
