@@ -2,6 +2,9 @@
     "name": "oihso/cse-php-sdk",
     "description": "Package generated from CSE SOAP WSDL https://web.cse.ru/1c/ws/Web1C.1cws?wsdl using wsdltophp/packagegenerator",
 	"type": "library",
+	"minimum-stability": "stable",
+	"version": "1.0.0",
+	"keywords": ["php", "cse", "kse", "delivery"],
     "license": "Apache-2.0",
     "require": {
         "php": ">=7.4",
