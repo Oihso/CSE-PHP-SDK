@@ -11,6 +11,9 @@
 - ext-soap: *
 - wsdltophp/packagebase: ~5.0
 
+## Использование
+`composer require oihso/cse-php-sdk`
+
 ## Пример
 Получение описаний всех ошибок:
 ```php
